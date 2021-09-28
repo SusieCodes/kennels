@@ -18,6 +18,6 @@ export const PropsAndState = ({ yourName, day }) => {
 
       <p>{countClicks}</p>
       <button onClick={(handleClick)}>Click Me</button>
-    </>
+      </>
   )
 }

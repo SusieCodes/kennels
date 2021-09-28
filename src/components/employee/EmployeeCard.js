@@ -1,12 +1,12 @@
 import React from "react"
 import "./Employee.css"
 
-export const EmployeeCard = () => (
+export const EmployeeCard = (employee) => (
     <section className="employee">
-        <h3 className="employee__name">Employee Name</h3>
+        <h3 className="employee__name">{employee.name}</h3>
 
         <address className="employee__address">
-            <div>Nashville Kennels Downtown</div>
+            <div>{employee.address}</div>
         </address>
 
     </section>
