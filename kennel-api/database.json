@@ -3,9 +3,9 @@
     { "id": 1, "name": "Ziggy", "breed": "Poodle"},
     { "id": 2, "name": "Gertrude", "breed": "German Shepherd" },
     { "id": 3, "name": "Valentina", "breed": "Pitbull" },
-    { "id": 3, "name": "SweetPea", "breed": "Cocker Spaniel" },
-    { "id": 3, "name": "Misty", "breed": "Maltese" },
-    { "id": 3, "name": "Devora", "breed": "Dalmation" }
+    { "id": 4, "name": "SweetPea", "breed": "Cocker Spaniel" },
+    { "id": 5, "name": "Misty", "breed": "Maltese" },
+    { "id": 6, "name": "Devora", "breed": "Dalmation" }
   ],
   "customers": [
     {
@@ -43,64 +43,70 @@
     {
       "id": 1,
       "name": "Susie Stanley",
-      "address": "123 Strawberry Lane"
-    },
-    {
-      "id": 1,
-      "name": "Sylvia Plath",
-      "address": "456 Strawberry Lane"
-    },
-    {
-      "id": 1,
-      "name": "Phyllis Wheatley",
-      "address": "321 Blueberry Lane"
+      "address": "123 Strawberry Lane",
+      "location": 1
     },
     {
       "id": 2,
+      "name": "Sylvia Plath",
+      "address": "456 Strawberry Lane",
+      "location": 2
+    },
+    {
+      "id": 3,
+      "name": "Phyllis Wheatley",
+      "address": "321 Blueberry Lane",
+      "location": 3
+    },
+    {
+      "id": 4,
       "name": "Rupi Kaur",
-      "address": "741 Raspberry Lane"
+      "address": "741 Raspberry Lane",
+      "location": 4
     },
     {
-      "id": 1,
+      "id": 5,
       "name": "Emily Dickinson",
-      "address": "789 Mango Road"
+      "address": "789 Mango Road",
+      "location": 5
     },
     {
-      "id": 1,
+      "id": 6,
       "name": "Maya Angelou",
-      "address": "369 Kiwi Avenue"
+      "address": "369 Kiwi Avenue",
+      "location": 6
     }
   ],
   "locations": [
-      {
-          "id": 1,
-          "name": "Nashville North",
-          "address": "8422 Johnson Pike"
-      },
-      {
-          "id": 2,
-          "name": "Nashville South",
-          "address": "209 Emory Drive"
-      },
-      {
-          "id": 3,
-          "name": "Franklin North",
-          "address": "100 Northview Road"
-      },
-      {
-          "id": 4,
-          "name": "Franklin South",
-          "address": "159 Balmoral Avenue"
-      },
-      {
-          "id": 5,
-          "name": "Fairview North",
-          "address": "778 SilverSprings St"
-      },
-      {
-          "id": 6,
-          "name": "Fairview South",
-          "address": "896 Bentley Lane"
-      }
+    {
+        "id": 1,
+        "name": "Nashville North",
+        "address": "8422 Johnson Pike"
+    },
+    {
+        "id": 2,
+        "name": "Nashville South",
+        "address": "209 Emory Drive"
+    },
+    {
+        "id": 3,
+        "name": "Franklin North",
+        "address": "100 Northview Road"
+    },
+    {
+        "id": 4,
+        "name": "Franklin South",
+        "address": "159 Balmoral Avenue"
+    },
+    {
+        "id": 5,
+        "name": "Fairview North",
+        "address": "778 SilverSprings St"
+    },
+    {
+        "id": 6,
+        "name": "Fairview South",
+        "address": "896 Bentley Lane"
+    }
   ]
 }
