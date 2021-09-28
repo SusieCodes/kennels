@@ -1,0 +1,26 @@
+
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.customer {
+    flex-basis: 28%;
+    max-width: 350px;
+    margin: 16px;
+    padding: 20px 30px;
+    border: 1px solid goldenrod;
+}
+
+.customer h3 {
+  margin-top: 0px
+}
+
+.customer__name {
+
+}
+
+.customer__address {
+  
+}
