@@ -20,14 +20,11 @@ export const AnimalList = () => {
   }, []);
 
   console.log("animals is: ", animals)
-
-  // Finally we use .map() to "loop over" the animals array to show a list of animal cards
-  return (
-    <div className="container-cards">
-      {animals.map(animal => <AnimalCard />)}
-    </div>
-  );
-};
-
-
-
+  
+    return(
+      <div className="container-cards">
+        {animals.map(animal =>
+          <AnimalCard key={animal.id} animal={animal} />)}
+      </div>
+    );
+  };

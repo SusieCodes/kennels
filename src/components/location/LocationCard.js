@@ -1,14 +1,14 @@
 import React from "react"
 import "./Location.css"
+import "./../../cards.css"
 
-export const LocationCard = () => (
-    <section className="location">
-        <h3 className="location__name">Location Name</h3>
-
-        <address className="location__address">
-            <div>500 Puppy Way</div>
-            <div>Nashville, TN 37064</div>
-        </address>
-
+export const LocationCard = ({ location }) => (
+    <section className="card">
+      <div className="card-content">
+        <h3>Location: <span className="card-location-name">
+          {location.name}
+        </span></h3>
+        <p>Address: {location.address}</p>
+      </div>
     </section>
 )

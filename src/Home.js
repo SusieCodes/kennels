@@ -8,7 +8,7 @@ export const Home = ({isAdmin}) => (
     <>
 
     {isAdmin ?
-    <p>You are an Admin</p> 
+    <h3>You are an Admin</h3> 
     : <p>You are an not an Admin</p>}
 
         <h2>Nashville Kennels</h2>
