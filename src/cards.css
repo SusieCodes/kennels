@@ -1,0 +1,23 @@
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-content {
+  flex-basis: 1;
+  width: 350px;
+  margin: 16px;
+  padding: 20px 30px;
+  border: 1px solid goldenrod;
+}
+
+.card-content h3 {
+  margin: 0px;
+}
+
+picture {
+  margin: 20px;
+  border: 2px solid black;
+}
