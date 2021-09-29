@@ -8,8 +8,8 @@ export const EmployeeCard = ({ employee }) => (
   <h3>Name: <span className="employee__name">
     {employee.name}
   </span></h3>
-  <address className="employee__address">Home Address: {employee.address}</address>
-  <div className="">Location Id: {employee.locationId}</div>
+  <address className="employee__address"><strong>Home Address: </strong> {employee.address}</address>
+  <div className="employee__address"><strong>Location: </strong> {employee.location.name}</div>
   </div>
 </section>
 )
