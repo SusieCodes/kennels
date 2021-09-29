@@ -8,8 +8,12 @@ export const CustomerCard = ({ customer }) => (
         <h3>Name: <span className="customer__name">
           {customer.name}
         </span></h3>
-        <address className="customer__address">Address: {customer.address}</address>
-        <div className="customer__phone">Phone Number:{customer.phoneNumber}</div>
+
+        <div className="customer__address"><strong>Address: </strong> {customer.address}</div>
+
+        <div className="customer__phone"><strong>Phone Number: </strong> {customer.phoneNumber}</div>
+
+        <div className="customer__pet"><strong>Pet Name: </strong>{customer.animal.name} <strong> &nbsp;&nbsp; Breed: </strong> {customer.animal.breed}</div>
       </div>
     </section>
 )
