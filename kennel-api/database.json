@@ -11,32 +11,38 @@
     {
         "id": 1,
         "name": "Hannah Hall",
-        "address": "7002 Chestnut Ct"
+        "address": "4002 Pistachio Place",
+        "phoneNumber": "615-555-1212"
     },
     {
       "id": 2,
       "name": "Betty Boop",
-      "address": "7002 Chestnut Ct"
+      "address": "9447 Walnut Way",
+      "phoneNumber": "615-555-1212"
     },
     {
       "id": 3,
       "name": "Melanie Matthews",
-      "address": "7002 Chestnut Ct"
+      "address": "346 Brazilnut Blvd",
+      "phoneNumber": "615-555-1212"
     },
     {
       "id": 4,
       "name": "Penelope Piper",
-      "address": "7002 Chestnut Ct"
+      "address": "1196 Cashew Ct",
+      "phoneNumber": "615-555-1212"
     },
     {
       "id": 5,
       "name": "Nancy Newborn",
-      "address": "7002 Chestnut Ct"
+      "address": "3001 Almond Ave",
+      "phoneNumber": "615-555-1212"
     },
     {
       "id": 6,
       "name": "Hannah Hall",
-      "address": "7002 Chestnut Ct"
+      "address": "200 Peanut Pike",
+      "phoneNumber": "615-555-1212"
     }
   ],
   "employees": [
@@ -44,37 +50,37 @@
       "id": 1,
       "name": "Susie Stanley",
       "address": "123 Strawberry Lane",
-      "location": 1
+      "locationId": 1
     },
     {
       "id": 2,
       "name": "Sylvia Plath",
-      "address": "456 Strawberry Lane",
-      "location": 2
+      "address": "456 Grapefruit Place",
+      "locationId": 2
     },
     {
       "id": 3,
       "name": "Phyllis Wheatley",
-      "address": "321 Blueberry Lane",
-      "location": 3
+      "address": "321 Blueberry Street",
+      "locationId": 3
     },
     {
       "id": 4,
       "name": "Rupi Kaur",
-      "address": "741 Raspberry Lane",
-      "location": 4
+      "address": "741 Raspberry Circle",
+      "locationId": 4
     },
     {
       "id": 5,
       "name": "Emily Dickinson",
       "address": "789 Mango Road",
-      "location": 5
+      "locationId": 5
     },
     {
       "id": 6,
       "name": "Maya Angelou",
       "address": "369 Kiwi Avenue",
-      "location": 6
+      "locationId": 6
     }
   ],
   "locations": [

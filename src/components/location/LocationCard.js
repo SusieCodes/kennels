@@ -1,13 +1,12 @@
 import React from "react"
 import "./Location.css"
 
-export const LocationCard = () => (
+export const LocationCard = (location) => (
     <section className="location">
-        <h3 className="location__name">Location Name</h3>
+        <h3 className="location__name">{location.name}</h3>
 
         <address className="location__address">
-            <div>500 Puppy Way</div>
-            <div>Nashville, TN 37064</div>
+            <div>{location.address}</div>
         </address>
 
     </section>
