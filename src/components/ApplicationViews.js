@@ -15,25 +15,25 @@ export const ApplicationViews = ({isAdmin}) => {
             </Route>
 
             {/* Render the animal list when http://localhost:3000/animals */}
-            <Route path="/animals">
+            <Route exact path="/animals">
               <AnimalList />
             </Route>
         
 
             {/* Render the employee list when http://localhost:3000/employees */}
-            <Route path="/employees">
+            <Route exact path="/employees">
               <EmployeeList />
             </Route>
 
 
             {/* Render the location list when http://localhost:3000/locations */}
-            <Route path="/locations">
+            <Route exact path="/locations">
               <LocationList />
             </Route>
 
 
             {/* Render the customer list when http://localhost:3000/customers */}
-            <Route path="/customers">
+            <Route exact path="/customers">
               <CustomerList />
             </Route>
         </>

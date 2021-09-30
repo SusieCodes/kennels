@@ -1,24 +1,40 @@
 import React from "react";
 import { PropsAndState } from './components/PropsAndState'
 
+const date = new Date();
+let todaysDate = date.toDateString();
+let theTime = date.toLocaleTimeString();
+console.log(todaysDate);
+console.log(theTime);
 
-
-export const Home = ({isAdmin}) => (
-
+export const Home = ({isAdmin}) => {
+    return (
     <>
+    <div className="home__flex">
+        <div className="col1">
 
-    {isAdmin ?
-    <h3>You are an Admin</h3> 
-    : <p>You are an not an Admin</p>}
+            <div className="headline">Cohort 51 Dog Grooming</div>
+            <div className="subtitle">Let us make your furbaby beautiful!</div>
 
-        <h2>Nashville Kennels</h2>
-        <small>Loving care when you're not there.</small>
+            <div className="welcome">
+                <PropsAndState yourName={"Susie"} day={todaysDate} time={theTime}/>
 
-        <address>
-            <div>Visit Us at the Nashville North Location</div>
-            <div>500 Puppy Way</div>
-        </address>
+                {isAdmin ?
+                <div>You are an Admin</div> 
+                : <div>You are an not an Admin</div>}
 
-        <PropsAndState yourName={"Susie"} day={"Monday"} />
+            </div>
+
+            <div className="front-page-cta">Visit One Of Our 6 Locations</div>
+
+        </div>
+
+        <div className="col2">
+            <img src={require(`./images/homepagepic.png`).default} alt="cute dog with sign" />
+        </div>
+
+    </div>
     </>
-)
+    
+    )
+}

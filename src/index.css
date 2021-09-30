@@ -1,4 +1,12 @@
+/* site colors used::after
+#8D7068 brown
+#9F4948 burgundy
+#DFD0BB beige
+antiquewhite as bg
+*/
+
 body {
+  background-color: antiquewhite;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

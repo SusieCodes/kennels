@@ -1,4 +1,25 @@
+.nav__flex {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+.nav__flex--bar {
+  margin: auto 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo {
+  width: 225px;
+  margin: 20px 50px;
+}
+
 .navbar {
+  background-color: antiquewhite;
   display: flex;
   flex-wrap: nowrap;
   justify-content: left;
@@ -6,10 +27,14 @@
 
 .navbar__item {
   flex-basis: 20%;
+  white-space: nowrap;
+  margin: 0px 20px;
   list-style-type: none;
 }
 
 .navbar__link {
+  font-size: 26px;
+  font-weight: bold;
+  color: #5D4943;
   text-decoration: none;
-  font-size: 20px;
 }

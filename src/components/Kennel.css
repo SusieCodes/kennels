@@ -1,15 +1,16 @@
-/* Import the google web fonts you want to use */
+/* Importing google web fonts  */
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap");
 
-/*Typography
---------------------------------------------------------------*/
+
+/* ---------- Typography ----------*/
 body,
 button,
 input,
 select,
 textarea {
   color: #404040;
-  font-family: "Comfortaa", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -25,7 +26,21 @@ h6 {
 }
 
 #root {
-  padding: 30px;
+  background-color: rgb(255, 251, 247);
+  padding: 0px;
+}
+
+.section {
+  padding: 0px;
+}
+
+.section__header {
+  /* font-family: "", serif; */
+  font-size: 36px;
+  font-weight: 800;
+  color: #5D4943;
+  margin: 20px;
+  text-align: center;
 }
 
 p {
@@ -40,4 +55,50 @@ strong {
 
 address {
   margin: 10px 0px;
+}
+
+.home__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+
+.col1 {
+  margin-left: 100px;
+  padding-top: 50px;
+}
+
+.front-page-cta {
+  font-size: 16px;
+}
+
+.col2 {
+  margin-right: 100px;
+}
+
+.welcome {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px 20px;
+}
+
+.headline {
+  font-family: "Source Serif Pro", serif;
+  font-size: 36px;  
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+
+.username {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.front-page-cta {
+  font-size: 18px;
+  font-weight: bold;
 }

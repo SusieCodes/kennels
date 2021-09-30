@@ -23,8 +23,17 @@ export const LocationList = () => {
 
   // Finally we use .map() to "loop over" the array to show a list of cards
   return (
-    <div className="container-cards">
-    {locations.map(location => <LocationCard key={location.id} location={location} />)}
+
+    <div className="section">
+
+      <div className="section__header">
+      LOCATIONS
+      </div> 
+
+      <div className="container-cards">
+      {locations.map(location => <LocationCard key={location.id} location={location} />)}
+      </div>
+
   </div>
   );
 };

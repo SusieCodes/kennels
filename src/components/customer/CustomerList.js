@@ -23,8 +23,16 @@ export const CustomerList = () => {
 
   // Finally we use .map() to "loop over" the array to show a list of cards
   return (
-    <div className="container-cards">
-      {customers.map(customer => <CustomerCard key={customer.id} customer={customer}/>)}
+    <div className="section">
+
+      <div className="section__header">
+      CUSTOMERS
+      </div> 
+
+      <div className="container-cards">
+        {customers.map(customer => <CustomerCard key={customer.id} customer={customer}/>)}
+      </div>
+
     </div>
   );
 };

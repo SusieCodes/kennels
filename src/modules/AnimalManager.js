@@ -7,6 +7,9 @@ const remoteURL = "http://localhost:5002"
 // }
 
 export const getAllAnimals = () => {
-  return fetch(`${remoteURL}/animals`)
+  const fetchResults = fetch(`${remoteURL}/animals?_expand=location&_expand=customer`)
+  .then(res => res.json())
+  console.log("fetchResults inside getAllAnimals is: ", fetchResults)
+  return fetch(`${remoteURL}/animals?_expand=location&_expand=customer`)
   .then(res => res.json())
 }
