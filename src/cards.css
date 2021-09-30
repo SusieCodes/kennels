@@ -3,21 +3,27 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0px 50px 30px;
 }
 
-.card-content {
+.page__card {
+  padding: 0px;
+}
+
+.card__content {
+  /* background-color: #8D7068; */
+  background-color: #8e7973;
+
+  color: white;
   flex-basis: 1;
   width: 350px;
-  margin: 16px;
-  padding: 20px 30px;
-  border: 1px solid goldenrod;
-}
-
-.card-content h3 {
-  margin: 0px;
-}
-
-picture {
   margin: 20px;
-  border: 2px solid black;
+  /* border: 5px solid #8D7068; */
+  border: 10px solid #8e7973;
+  border-radius: 10px;
+}
+
+picture img {
+  width: 100%;
+  border-radius: 10px;
 }

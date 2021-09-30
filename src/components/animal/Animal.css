@@ -1,21 +1,16 @@
-.animals {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.pet__info {
+  padding: 30px;
 }
 
-.animal {
-    flex-basis: 28%;
-    max-width: 350px;
-    margin: 16px;
-    padding: 20px 30px;
-    border: 1px solid goldenrod;
+.pet__info--name {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
 }
 
-.animal h3 {
-  margin-top: 0px
-}
-
-.animal__name, .animal__breed {
-  margin: 0px;
+.pet__info--details {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 }

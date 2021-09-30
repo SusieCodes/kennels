@@ -1,25 +1,17 @@
-.customers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.customer__info {
+  padding: 20px 30px;
+  text-align: left;
 }
 
-.customer {
-    flex-basis: 28%;
-    max-width: 350px;
-    margin: 16px;
-    padding: 20px 30px;
-    border: 1px solid goldenrod;
+.customer__info--name {
+  font-size: 24px;
+  font-weight: 700;
+  color: white; 
+  margin-bottom: 10px;
 }
 
-.customer h3 {
-  margin-top: 0px
-}
-
-.customer__name {
-  margin: 0px;
-}
-
-.customer__address {
-  margin: 0px;  
+.customer__info--address, .customer__info--phone, .customer__info--petname, .customer__info--petbreed {
+  font-size: 18px;
+  font-weight: 400;
+  color: white; 
 }

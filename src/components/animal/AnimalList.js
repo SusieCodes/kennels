@@ -22,9 +22,18 @@ export const AnimalList = () => {
   console.log("animals is: ", animals)
   
     return(
-      <div className="container-cards">
-        {animals.map(animal =>
-          <AnimalCard key={animal.id} animal={animal} />)}
+
+      <div className="section">
+
+        <div className="section__header">
+        PETS
+        </div> 
+
+        <div className="container-cards">
+          {animals.map(animal =>
+            <AnimalCard key={animal.id} animal={animal} />)}
+        </div>
+
       </div>
     );
-  };
+};

@@ -1,54 +1,60 @@
 {
   "animals": [
-    { "id": 1, "name": "Ziggy", "breed": "Poodle"},
-    { "id": 2, "name": "Gertrude", "breed": "German Shepherd" },
-    { "id": 3, "name": "Valentina", "breed": "Pitbull" },
-    { "id": 4, "name": "SweetPea", "breed": "Cocker Spaniel" },
-    { "id": 5, "name": "Misty", "breed": "Maltese" },
-    { "id": 6, "name": "Devora", "breed": "Dalmation" }
+    { "id": 1, "name": "Ziggy", "breed": "Poodle", "locationId": 1, "customerId": 1, "image": "ziggy.png" },
+    { "id": 2, "name": "Gertrude", "breed": "German Shepherd", "locationId": 2, "customerId": 2, "image": "gspuppy.jpeg" },
+    { "id": 3, "name": "Valentina", "breed": "King Charles", "locationId": 3, "customerId": 3, "image": "puppy.png" },
+    { "id": 4, "name": "SweetPea", "breed": "Labrador", "locationId": 4, "customerId": 4, "image": "lab.png" },
+    { "id": 5, "name": "Misty", "breed": "Maltese", "locationId": 5, "customerId": 5, "image": "maltese.png" },
+    { "id": 6, "name": "Devora", "breed": "Dalmatian", "locationId": 6, "customerId": 6, "image": "dalmatian.png" }
   ],
   "customers": [
     {
         "id": 1,
-        "name": "Hannah Hall",
+        "name": "Susie Stanley",
         "address": "4002 Pistachio Place",
         "phoneNumber": "615-555-1212",
-        "animalId": 1
+        "animalId": 1,
+        "image": "customer1.png"
     },
     {
       "id": 2,
       "name": "Betty Boop",
       "address": "9447 Walnut Way",
       "phoneNumber": "615-555-1212",
-      "animalId": 2
+      "animalId": 2,
+      "image": "customer2.png"
     },
     {
       "id": 3,
       "name": "Melanie Matthews",
       "address": "346 Brazilnut Blvd",
       "phoneNumber": "615-555-1212",
-      "animalId": 3
+      "animalId": 3,
+      "image": "customer3.png"
     },
     {
       "id": 4,
       "name": "Penelope Piper",
       "address": "1196 Cashew Ct",
       "phoneNumber": "615-555-1212",
-      "animalId": 4
+      "animalId": 4,
+      "image": "customer4.png"
     },
     {
       "id": 5,
       "name": "Nancy Newborn",
       "address": "3001 Almond Ave",
       "phoneNumber": "615-555-1212",
-      "animalId": 5
+      "animalId": 5,
+      "image": "customer5.png"
     },
     {
       "id": 6,
       "name": "Linda Lewis",
       "address": "200 Peanut Pike",
       "phoneNumber": "615-555-1212",
-      "animalId": 6
+      "animalId": 6,
+      "image": "customer6.png"
     }
   ],
   "employees": [
@@ -56,69 +62,93 @@
       "id": 1,
       "name": "Susie Stanley",
       "address": "123 Strawberry Lane",
-      "locationId": 1
+      "phoneNumber": "615-555-1212",
+      "locationId": 1,
+      "image": "employee1.png"
     },
     {
       "id": 2,
       "name": "Sylvia Plath",
       "address": "456 Grapefruit Place",
-      "locationId": 2
+      "phoneNumber": "615-555-1212",
+      "locationId": 2,
+      "image": "employee2.png"
     },
     {
       "id": 3,
-      "name": "Phyllis Wheatley",
+      "name": "Anna Akhmatova",
       "address": "321 Blueberry Street",
-      "locationId": 3
+      "phoneNumber": "615-555-1212",
+      "locationId": 3,
+      "image": "employee3.png"
     },
     {
       "id": 4,
       "name": "Rupi Kaur",
       "address": "741 Raspberry Circle",
-      "locationId": 4
+      "phoneNumber": "615-555-1212",
+      "locationId": 4,
+      "image": "employee4.png"
     },
     {
       "id": 5,
       "name": "Emily Dickinson",
       "address": "789 Mango Road",
-      "locationId": 5
+      "phoneNumber": "615-555-1212",
+      "locationId": 5,
+      "image": "employee5.png"
     },
     {
       "id": 6,
-      "name": "Maya Angelou",
+      "name": "Charlotte Bronte",
       "address": "369 Kiwi Avenue",
-      "locationId": 6
+      "phoneNumber": "615-555-1212",
+      "locationId": 6,
+      "image": "employee6.png"
     }
   ],
   "locations": [
     {
         "id": 1,
-        "name": "Nashville North",
-        "address": "8422 Johnson Pike"
+        "name": "Franklin South",
+        "address": "8422 Johnson Pike",
+        "phoneNumber": "615-867-5309",
+        "image": "location1.png"
     },
     {
         "id": 2,
         "name": "Nashville South",
-        "address": "209 Emory Drive"
+        "address": "209 Emory Drive",
+        "phoneNumber": "615-867-5309",
+        "image": "location2.png"
     },
     {
         "id": 3,
         "name": "Franklin North",
-        "address": "100 Northview Road"
+        "address": "100 Northview Road",
+        "phoneNumber": "615-867-5309",
+        "image": "location3.png"
     },
     {
         "id": 4,
-        "name": "Franklin South",
-        "address": "159 Balmoral Avenue"
+        "name": "Nashville North",
+        "address": "159 Balmoral Avenue",
+        "phoneNumber": "615-867-5309",
+        "image": "location1.png"
     },
     {
         "id": 5,
         "name": "Fairview North",
-        "address": "778 SilverSprings St"
+        "address": "778 SilverSprings St",
+        "phoneNumber": "615-867-5309",
+        "image": "location2.png"
     },
     {
         "id": 6,
         "name": "Fairview South",
-        "address": "896 Bentley Lane"
+        "address": "896 Bentley Lane",
+        "phoneNumber": "615-867-5309",
+        "image": "location3.png"
     }
   ]
 }

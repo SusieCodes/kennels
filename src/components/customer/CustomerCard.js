@@ -3,17 +3,27 @@ import "./Customer.css"
 import "./../../cards.css"
 
 export const CustomerCard = ({ customer }) => (
-    <section className="card">
-      <div className="card-content">
-        <h3>Name: <span className="customer__name">
-          {customer.name}
-        </span></h3>
+    <section className="page__card">
+      <div className="card__content">
 
-        <div className="customer__address"><strong>Address: </strong> {customer.address}</div>
+        <picture>
+          <img src={require(`../../images/${customer.image}`).default} alt={customer.name} />
+        </picture>
 
-        <div className="customer__phone"><strong>Phone Number: </strong> {customer.phoneNumber}</div>
+        <div className="customer__info">
 
-        <div className="customer__pet"><strong>Pet Name: </strong>{customer.animal.name} <strong> &nbsp;&nbsp; Breed: </strong> {customer.animal.breed}</div>
+          <div className="customer__info--name">{customer.name}
+          </div>
+
+          <div className="customer__info--address"><strong>Address: </strong> {customer.address}</div>
+
+          <div className="customer__info--phone"><strong>Phone Number: </strong> {customer.phoneNumber}</div>
+
+          <div className="customer__info--petname"><strong>Pet Name: </strong>{customer.animal.name}</div>
+
+          <div className="customer__info--petbreed"><strong>Breed: </strong> {customer.animal.breed}</div>
+
+        </div>
       </div>
     </section>
 )
