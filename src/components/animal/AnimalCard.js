@@ -2,7 +2,7 @@ import React from "react"
 import "./Animal.css"
 import "./../../cards.css"
 
-export const AnimalCard = ({ animal }) => (
+export const AnimalCard = ({ animal, handleDeleteAnimal }) => (
     <section className="page__card">
       <div className="card__content">
         
@@ -21,6 +21,10 @@ export const AnimalCard = ({ animal }) => (
           <div className="pet__info--details"><strong>Location: </strong> {animal.location.name}</div>
 
         </div>
+        <div className="remove-item">
+        <button type="button" onClick={() => handleDeleteAnimal(animal.id)}>Remove Pet</button>
+        </div>
       </div>
     </section>
 )
+

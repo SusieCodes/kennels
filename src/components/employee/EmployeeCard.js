@@ -2,7 +2,7 @@ import React from "react"
 import "./Employee.css"
 import "./../../cards.css"
 
-export const EmployeeCard = ({ employee }) => (
+export const EmployeeCard = ({ employee, handleDeleteEmployee }) => (
 <section className="page__card">
   <div className="card__content">
 
@@ -25,6 +25,11 @@ export const EmployeeCard = ({ employee }) => (
       <div className="employee__info--location"> <strong>Location: </strong> {employee.location.name}</div>
 
     </div>
+
+    <div className="remove-item">
+        <button type="button" onClick={() => handleDeleteEmployee(employee.id)}>Remove Employee</button>
+        </div>
+
   </div>
 </section>
 )

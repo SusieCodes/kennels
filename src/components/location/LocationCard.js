@@ -2,7 +2,7 @@ import React from "react"
 import "./Location.css"
 import "./../../cards.css"
 
-export const LocationCard = ({ location }) => (
+export const LocationCard = ({ location, handleDeleteLocation }) => (
     <section className="page__card">
 
       <div className="card__content">
@@ -20,6 +20,10 @@ export const LocationCard = ({ location }) => (
 
         <div className="location__info--phone"><strong>Bus Phone: </strong>{location.phoneNumber}</div>
 
+        </div>
+
+        <div className="remove-item">
+        <button type="button" onClick={() => handleDeleteLocation(location.id)}>Remove Location</button>
         </div>
 
       </div>

@@ -65,13 +65,20 @@ picture img {
   justify-content: center;
 }
 
+.remove-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 button {
-  color: black;
+  color: gray;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   background-color: antiquewhite;
   border: 2px solid #b3a898;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 7px 15px;
   margin-top: 15px;
 }
