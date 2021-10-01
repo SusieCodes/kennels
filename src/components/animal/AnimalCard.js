@@ -5,6 +5,7 @@ import "./../../cards.css"
 export const AnimalCard = ({ animal }) => (
     <section className="page__card">
       <div className="card__content">
+        
         <picture>
           <img src={require(`../../images/${animal.image}`).default} alt="Customer's Dog" />
         </picture>
