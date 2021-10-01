@@ -1,6 +1,9 @@
 .pet__info {
-  padding: 30px 30px 0px;
-  background-color: #C9BCAB;}
+  /* padding: 30px 30px 0px; */
+  padding: 20px 30px;
+  text-align: left;
+  background-color: #C9BCAB;
+}
 
 .pet__info--name {
   font-size: 26px;
@@ -15,9 +18,7 @@
   color: white;
 }
 
-.remove-pet {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-bottom: 20px;
+.details__photo {
+  width: 400px;
+  margin-bottom: 30px;
 }

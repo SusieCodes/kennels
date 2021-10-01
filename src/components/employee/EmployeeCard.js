@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import "./Employee.css"
 import "./../../cards.css"
 
@@ -27,8 +28,11 @@ export const EmployeeCard = ({ employee, handleDeleteEmployee }) => (
     </div>
 
     <div className="remove-item">
-        <button type="button" onClick={() => handleDeleteEmployee(employee.id)}>Remove Employee</button>
-        </div>
+
+      <Link to={`/employees/${employee.id}`}><button>Details</button></Link>
+      <button type="button" onClick={() => handleDeleteEmployee(employee.id)}>Remove Employee</button>
+
+    </div>
 
   </div>
 </section>

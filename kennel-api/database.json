@@ -9,12 +9,12 @@
   ],
   "customers": [
     {
-        "id": 1,
-        "name": "Susie Stanley",
-        "address": "4002 Pistachio Place",
-        "phoneNumber": "615-555-1212",
-        "animalId": 1,
-        "image": "customer1.png"
+      "id": 1,
+      "name": "Susie Stanley",
+      "address": "4002 Pistachio Place",
+      "phoneNumber": "615-555-1212",
+      "animalId": 1,
+      "image": "customer1.png"
     },
     {
       "id": 2,
