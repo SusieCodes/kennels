@@ -12,18 +12,48 @@
 
 .card__content {
   /* background-color: #8D7068; */
-  background-color: #8e7973;
-
+  /* background-color: #8e7973; */
+  background-color: #C9BCAB;
   color: white;
   flex-basis: 1;
   width: 350px;
   margin: 20px;
-  /* border: 5px solid #8D7068; */
-  border: 10px solid #8e7973;
   border-radius: 10px;
 }
 
 picture img {
   width: 100%;
   border-radius: 10px;
+  margin-bottom: -10px;
+}
+
+.quote-list {
+  margin: 0px;
+}
+
+.quote__card {
+  background-color: #C9BCAB;
+  color: white;
+  width: 300px;
+  padding: 20px 30px;
+  border: 2px solid #b3a898;
+  border-radius: 10px;   
+}
+
+.quote__content--title {
+  font-family: "Source Serif Pro", serif;
+  font-size: 22px; 
+  font-weight: bold;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.quote__content--text {
+ font-size: 18px;
+ margin-bottom: 10px;
+}
+
+.quote__content--author {
+  font-size: 16px; 
 }
