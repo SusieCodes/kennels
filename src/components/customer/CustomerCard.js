@@ -2,7 +2,7 @@ import React from "react"
 import "./Customer.css"
 import "./../../cards.css"
 
-export const CustomerCard = ({ customer }) => (
+export const CustomerCard = ({ customer, handleDeleteCustomer }) => (
     <section className="page__card">
       <div className="card__content">
 
@@ -24,6 +24,11 @@ export const CustomerCard = ({ customer }) => (
           <div className="customer__info--petbreed"><strong>Breed: </strong> {customer.animal.breed}</div>
 
         </div>
+
+        <div className="remove-item">
+        <button type="button" onClick={() => handleDeleteCustomer(customer.id)}>Remove Customer</button>
+        </div>
+
       </div>
     </section>
 )

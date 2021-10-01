@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { LocationCard } from './LocationCard';
-import { getAllLocations } from '../../modules/LocationManager';
+import { getAllLocations, deleteLocation } from '../../modules/LocationManager';
 
 export const LocationList = () => {
   // The initial state is an empty array
@@ -12,6 +12,11 @@ export const LocationList = () => {
     return getAllLocations().then(locationsFromAPI => {
       setLocations(locationsFromAPI)
     });
+  };
+
+  const handleDeleteLocation = id => {
+    deleteLocation(id)
+    .then(() => getAllLocations().then(setLocations));
   };
 
   // got the locations from the API on the component's first render
@@ -31,7 +36,11 @@ export const LocationList = () => {
       </div> 
 
       <div className="container-cards">
-      {locations.map(location => <LocationCard key={location.id} location={location} />)}
+      {locations.map(location => 
+      <LocationCard 
+      key={location.id} 
+      location={location}
+      handleDeleteLocation={handleDeleteLocation} />)}
       </div>
 
   </div>
