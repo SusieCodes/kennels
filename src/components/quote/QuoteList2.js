@@ -39,8 +39,10 @@ export const QuoteList = () => {
       {quote.author ?
         <div className="quote__content--author"> - {quote.author}</div>
         : <div className="quote__content--author"> - Anonymous</div>}
-
-  
+      <div className="quote-button">
+        <button onClick={(randomQuote)}>Get New Quote</button>
+      </div>
+      
     </div>
   </section> 
   )

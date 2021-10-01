@@ -34,7 +34,8 @@ picture img {
 .quote__card {
   background-color: #C9BCAB;
   color: white;
-  width: 300px;
+  min-width: 300px;
+  max-width: 450px;
   padding: 20px 30px;
   border: 2px solid #b3a898;
   border-radius: 10px;   
@@ -56,4 +57,21 @@ picture img {
 
 .quote__content--author {
   font-size: 16px; 
+}
+
+.quote-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: antiquewhite;
+  border: 2px solid #b3a898;
+  border-radius: 20px;
+  padding: 7px 15px;
+  margin-top: 15px;
 }
