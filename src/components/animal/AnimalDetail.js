@@ -1,14 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { getAnimalById } from "../../modules/AnimalManager";
+import { getAnimalById, deleteAnimal } from "../../modules/AnimalManager";
 import "./Animal.css";
 import "../../components/Kennel.css";
 import { useParams, useHistory } from "react-router-dom";
 
 export const AnimalDetail = () => {
   const [animal, setAnimal] = useState({ name: "", breed: "", ownerName: "", location: "", image: "" });
+  const [isLoading, setIsLoading] = useState(true);
 
   const {animalId} = useParams();
   const history = useHistory();
+
+  const handleDelete = () => {
+    console.log("handleDelete invoked")
+    //invokes the delete function in AnimalManager and re-directs to animal list.
+    setIsLoading(true);
+    deleteAnimal(animalId).then(() =>
+      history.push("/animals")
+    );
+  };
+
+  const goBack = () => { history.push("/animals")}; //takes user back to list
 
   useEffect(() => {
     //getAnimalById(id) from AnimalManager and hang on to the data; put it into state
@@ -24,6 +36,7 @@ export const AnimalDetail = () => {
           location: animal.location.name,
           image: animal.image
         });
+        setIsLoading(false);
       });
   }, [animalId]);
 
@@ -50,6 +63,12 @@ export const AnimalDetail = () => {
           <div className="pet__info--details"><strong>Location: </strong> {animal.location}</div>
 
       </div>
+
+      <div className="btn-flex">
+        <button className="details__btn" type="button" disabled={isLoading} onClick={goBack}>Back To List</button>
+        <button className="details__btn" type="button" disabled={isLoading} onClick={handleDelete}>Remove</button>
+      </div>
+
     </div>
   
   );
