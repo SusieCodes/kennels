@@ -4,7 +4,7 @@ import './Location.css';
 import { useParams, useHistory } from "react-router-dom"
 
 export const LocationDetail = () => {
-  const [location, setLocation] = useState({ name: "", address: "", phoneNumber: "" });
+  const [location, setLocation] = useState({ name: "", address: "", phoneNumber: "", image: "" });
 
   const {locationId} = useParams();
   const history = useHistory();
@@ -17,21 +17,35 @@ export const LocationDetail = () => {
         setLocation({
           name: location.name,
           address: location.address,
-          phoneNumber: location.phoneNumber
+          phoneNumber: location.phoneNumber,
+          image: location.image
         });
       });
   }, [locationId]);
 
   return (
-    <div className="location__info">
 
-    <div className="location__info--name">{location.name}
-    </div>
+    <div className="details">
 
-    <div className="location__info--address"><strong>Address: </strong>{location.address}</div>
+      <div className="details__header">
 
-    <div className="location__info--phone"><strong>Bus Phone: </strong>{location.phoneNumber}</div>
+        <picture>
+        {location.image !== "" ?
+        <img src={require(`../../images/${location.image}`).default} alt={location.name} className="details__header--photo"/> 
+        : <p>There isn't an image.</p>}
+        </picture>
 
+      </div>
+
+      <div className="location__info">
+
+      <div className="location__info--name">{location.name}
+      </div>
+
+      <div className="location__info--address"><strong>Address: </strong>{location.address}</div>
+
+      <div className="location__info--phone"><strong>Bus Phone: </strong>{location.phoneNumber}</div>
+      </div>
     </div>
   );
 }
