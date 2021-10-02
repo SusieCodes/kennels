@@ -28,6 +28,7 @@ h6 {
 #root {
   background-color: rgb(255, 251, 247);
   padding: 0px;
+  border: 1px solid black;
 }
 
 .section {
@@ -61,19 +62,20 @@ address {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 100px;
+  padding: 60px 100px;
 }
 
 .col1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 100px;
+  /* margin-left: 50px; */
   padding-top: 30px;
 }
 
 .col1__inner {
-  align-self: flex-start;
+  /* align-self: flex-start; */
+  margin: auto auto;
 }
 
 .front-page-cta {
@@ -84,11 +86,12 @@ address {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 100px;
+  /* margin-right: 50px; */
 }
 
 .col2__photo {
   height: 526px;
+  margin: auto auto;
 }
 
 .welcome {
