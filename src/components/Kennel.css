@@ -28,7 +28,6 @@ h6 {
 #root {
   background-color: rgb(255, 251, 247);
   padding: 0px;
-  border: 1px solid black;
 }
 
 .section {
@@ -36,7 +35,6 @@ h6 {
 }
 
 .section__header {
-  /* font-family: "", serif; */
   font-size: 36px;
   font-weight: 800;
   color: #5D4943;
@@ -45,7 +43,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 22px;
   color: #d6fcff;
   color: darkslateblue;
 }
@@ -61,20 +59,30 @@ address {
 .home__flex {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px auto;
+}
+
+.home__flex--inner {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 60px 100px;
+  /* max-width: 2500px; */
+}
+
+.colspacer {
+  margin: 0px 20px;
 }
 
 .col1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin-left: 50px; */
   padding-top: 30px;
 }
 
 .col1__inner {
-  /* align-self: flex-start; */
   margin: auto auto;
 }
 
@@ -86,7 +94,6 @@ address {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* margin-right: 50px; */
 }
 
 .col2__photo {
@@ -125,7 +132,7 @@ address {
   flex-direction: column;
   justify-content: center;
   background-color: #C9BCAB;
-  /* padding: 30px auto 50px; */
+  padding: 30px;
   border: 1px solid black;
 }
 
@@ -139,7 +146,5 @@ address {
 .details__header--photo {
   align-self: center;
   width: 400px;
-  border-radius: 10px;
-  /* padding-top: 30px; */
-}
+  border-radius: 10px;}
 
