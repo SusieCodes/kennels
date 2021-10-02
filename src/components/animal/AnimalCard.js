@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import "./Animal.css"
 import "./../../cards.css"
 
@@ -7,7 +8,7 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => (
       <div className="card__content">
         
         <picture>
-          <img src={require(`../../images/${animal.image}`).default} alt="Customer's Dog" />
+          <img className="card__content--photo" src={require(`../../images/${animal.image}`).default} alt="Customer's Dog" />
         </picture>
 
         <div className="pet__info">
@@ -21,9 +22,17 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => (
           <div className="pet__info--details"><strong>Location: </strong> {animal.location.name}</div>
 
         </div>
+
         <div className="remove-item">
+
+        <Link to={`/animals/${animal.id}`}><button>Details</button></Link>
         <button type="button" onClick={() => handleDeleteAnimal(animal.id)}>Remove Pet</button>
+
+
         </div>
+
+
+        
       </div>
     </section>
 )

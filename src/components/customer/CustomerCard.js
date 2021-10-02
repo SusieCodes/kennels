@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import "./Customer.css"
 import "./../../cards.css"
 
@@ -7,7 +8,7 @@ export const CustomerCard = ({ customer, handleDeleteCustomer }) => (
       <div className="card__content">
 
         <picture>
-          <img src={require(`../../images/${customer.image}`).default} alt={customer.name} />
+          <img className="card__content--photo" src={require(`../../images/${customer.image}`).default} alt={customer.name} />
         </picture>
 
         <div className="customer__info">
@@ -26,7 +27,10 @@ export const CustomerCard = ({ customer, handleDeleteCustomer }) => (
         </div>
 
         <div className="remove-item">
+
+        <Link to={`/customers/${customer.id}`}><button>Details</button></Link>
         <button type="button" onClick={() => handleDeleteCustomer(customer.id)}>Remove Customer</button>
+
         </div>
 
       </div>

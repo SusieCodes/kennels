@@ -7,24 +7,21 @@
 }
 
 .page__card {
-  padding: 0px;
-}
+  border-radius: 10px;
+  padding: 0px;}
 
 .card__content {
-  /* background-color: #8D7068; */
-  /* background-color: #8e7973; */
   background-color: #C9BCAB;
   color: white;
   flex-basis: 1;
   width: 350px;
   margin: 20px;
-  border-radius: 10px;
-}
+  border-radius: 10px;}
 
-picture img {
+.card__content--photo {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: -10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .quote-list {
@@ -32,10 +29,13 @@ picture img {
 }
 
 .quote__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #C9BCAB;
   color: white;
-  min-width: 300px;
-  max-width: 450px;
+  width: 450px;
+  height: 256px;
   padding: 20px 30px;
   border: 2px solid #b3a898;
   border-radius: 10px;   
@@ -80,5 +80,5 @@ button {
   border: 2px solid #b3a898;
   border-radius: 10px;
   padding: 7px 15px;
-  margin-top: 15px;
+  margin: 15px 10px 0px;
 }

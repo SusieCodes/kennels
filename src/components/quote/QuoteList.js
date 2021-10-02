@@ -1,47 +1,49 @@
 import React, { useState, useEffect } from 'react';
-import { QuoteCard } from './QuoteCard';
-import { getAllQuotes, getRandomQuote } from '../../modules/QuoteManager';
-
+import "../../cards.css"
+import { getAllQuotes } from '../../modules/QuoteManager';
 
 
 export const QuoteList = () => {
-  // The initial state is an empty array
   const [quotes, setQuotes] = useState([]);
-  const [randomQuote, setRandomQuote] = useState({});
+  const [quote, setQuote] = useState([]);
 
   const getQuotes = () => {
-    // After the data comes back from the API, we
-    //  use the setQuotes function to update state
-    return getAllQuotes().then(quotesFromAPI => {
-      setQuotes(quotesFromAPI)
-    });
-  };
-
-  const pickNewQuote = () => {
-    setRandomQuote(getRandomQuote(quotes) || {});
-    console.log("randomQuote inside pickNewQuote is: ", randomQuote);
+    return getAllQuotes().then(response => {
+      setQuotes(response);
+    })
   }
 
-  // got the quotes from the API on the component's first render
+  const randomQuote = () => {
+    const randomIndex = Math.floor(Math.random() *quotes.length);
+    setQuote(quotes[randomIndex] || {})
+  }
+ 
   useEffect(() => {
     getQuotes();
-  }, []); //will never rerun because array is empty
+  }, []);
 
   useEffect(() => {
-    getRandomQuote();
+    randomQuote();
   }, [quotes]);
 
+  return (
+    <section className="page__card">
+    <div className="quote__card">
+      
 
-    return(
-      <>
-      {console.log("quotes in the return is: ", quotes)}
-        <div className="quote__card">
-          {quotes.length > 0 ? 
-            <QuoteCard quote={randomQuote} />
-            : <p>Loading Quote...</p>
-          }
-        </div>
-        <button onClick={pickNewQuote}>Get New Quote</button>
-    </>
-    )
-};
+      <div className="quote__content--title"><strong>Quote Of The Day</strong></div>
+
+      <div className="quote__content--text"><strong>{quote.text}</strong></div>
+
+      {quote.author ?
+        <div className="quote__content--author"> - {quote.author}</div>
+        : <div className="quote__content--author"> - Anonymous</div>}
+      <div className="quote-button">
+        <button onClick={(randomQuote)}>Get New Quote</button>
+      </div>
+      
+    </div>
+  </section> 
+  )
+
+}

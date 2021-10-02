@@ -1,6 +1,11 @@
 .employee__info {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px 30px;
   text-align: left;
+  background-color: #C9BCAB;
 }
 
 .employee__info--name {
@@ -10,7 +15,7 @@
   margin-bottom: 10px;
 }
 
-.employee__info--address, .employee__info--location, .employee__info--phone {
+.employee__info--address, .employee__info--phone, .employee__info--location {
   font-size: 18px;
   color: white; 
 }

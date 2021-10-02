@@ -35,7 +35,6 @@ h6 {
 }
 
 .section__header {
-  /* font-family: "", serif; */
   font-size: 36px;
   font-weight: 800;
   color: #5D4943;
@@ -44,7 +43,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 22px;
   color: #d6fcff;
   color: darkslateblue;
 }
@@ -60,20 +59,31 @@ address {
 .home__flex {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px auto;
+}
+
+.home__flex--inner {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 30px 100px;
+  padding: 60px 100px;
+  /* max-width: 2500px; */
+}
+
+.colspacer {
+  margin: 0px 30px;
 }
 
 .col1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 100px;
   padding-top: 30px;
 }
 
 .col1__inner {
-  align-self: flex-start;
+  margin: auto auto;
 }
 
 .front-page-cta {
@@ -84,7 +94,11 @@ address {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 100px;
+}
+
+.col2__photo {
+  height: 526px;
+  margin: auto auto;
 }
 
 .welcome {
@@ -112,3 +126,24 @@ address {
   font-size: 18px;
   font-weight: bold;
 }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #C9BCAB;
+  padding: 30px;
+}
+
+.details__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.details__header--photo {
+  align-self: center;
+  width: 400px;
+  border-radius: 10px;}
+
