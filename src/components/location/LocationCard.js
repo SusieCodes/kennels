@@ -9,7 +9,7 @@ export const LocationCard = ({ location, handleDeleteLocation }) => (
       <div className="card__content">
 
       <picture>
-        <img src={require(`../../images/${location.image}`).default} alt={location.name} />
+        <img className="card__content--photo" src={require(`../../images/${location.image}`).default} alt={location.name} />
       </picture>
 
         <div className="location__info">

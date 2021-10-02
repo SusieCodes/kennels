@@ -28,24 +28,29 @@ export const AnimalDetail = () => {
   }, [animalId]);
 
   return (
+    
     <div className="details">
+
+      <div className="details__header">
+      <picture>
+      {animal.image !== "" ?
+      <img src={require(`../../images/${animal.image}`).default} alt={animal.name} className="details__header--photo"/> 
+      : <p>There isn't an image.</p>}
+      </picture>
+      </div>
+
       <div className="pet__info">
 
-        <picture>
+          <div className="pet__info--name"><strong>Name: </strong> {animal.name}</div>
 
-        {animal.image !== "" ?  <img src={require(`../../images/${animal.image}`).default} alt={animal.name} className="details__photo"/> : <p>There isn't an image.</p>}
+          <div className="pet__info--details"><strong>Breed: </strong> {animal.breed}</div>
 
-        </picture>
+          <div className="pet__info--details"><strong>Owner: </strong> {animal.ownerName}</div>
 
-        <div className="pet__info--name"><strong>Name: </strong> {animal.name}</div>
+          <div className="pet__info--details"><strong>Location: </strong> {animal.location}</div>
 
-        <div className="pet__info--details"><strong>Breed: </strong> {animal.breed}</div>
-
-        <div className="pet__info--details"><strong>Owner: </strong> {animal.ownerName}</div>
-
-        <div className="pet__info--details"><strong>Location: </strong> {animal.location}</div>
-
+      </div>
     </div>
-  </div>
+  
   );
 }

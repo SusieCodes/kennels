@@ -1,6 +1,6 @@
 import React from "react";
 import { PropsAndState } from './components/PropsAndState'
-import { QuoteList } from './components/quote/QuoteList2'
+import { QuoteList } from './components/quote/QuoteList'
 
 const date = new Date();
 let todaysDate = date.toDateString();
@@ -37,7 +37,7 @@ export const Home = ({isAdmin}) => {
         </div>
 
         <div className="col2">
-            <img src={require(`./images/homepagepic.png`).default} alt="cute dog with sign" />
+            <img className="col2__photo" src={require(`./images/homepagepic.png`).default} alt="cute dog with sign" />
         </div>
 
     </div>

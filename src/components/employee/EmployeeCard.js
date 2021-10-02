@@ -8,7 +8,7 @@ export const EmployeeCard = ({ employee, handleDeleteEmployee }) => (
   <div className="card__content">
 
     <picture>
-      <img src={require(`../../images/${employee.image}`).default} alt={employee.name} />
+      <img className="card__content--photo" src={require(`../../images/${employee.image}`).default} alt={employee.name} />
     </picture>
 
     <div className="employee__info">

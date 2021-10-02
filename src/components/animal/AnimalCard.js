@@ -8,7 +8,7 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => (
       <div className="card__content">
         
         <picture>
-          <img src={require(`../../images/${animal.image}`).default} alt="Customer's Dog" />
+          <img className="card__content--photo" src={require(`../../images/${animal.image}`).default} alt="Customer's Dog" />
         </picture>
 
         <div className="pet__info">
