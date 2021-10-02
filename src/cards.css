@@ -29,6 +29,9 @@
 }
 
 .quote__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   background-color: #C9BCAB;
   color: white;
   width: 450px;

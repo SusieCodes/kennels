@@ -29,8 +29,7 @@ export const Home = ({isAdmin}) => {
                 </div>
 
                 <div className="quote-list">
-                <QuoteList /></div>
-                <div className="quote-button">
+                <QuoteList />
                 </div>
 
             </div>
