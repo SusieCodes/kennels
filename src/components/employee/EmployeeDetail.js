@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getEmployeeById } from '../../modules/EmployeeManager';
 import './Employee.css';
+import "../../components/Kennel.css";
 import { useParams, useHistory } from "react-router-dom"
 
 export const EmployeeDetail = () => {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getLocationById } from '../../modules/LocationManager';
 import './Location.css';
+import "../../components/Kennel.css";
 import { useParams, useHistory } from "react-router-dom"
 
 export const LocationDetail = () => {

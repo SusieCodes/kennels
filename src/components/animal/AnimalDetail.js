@@ -32,11 +32,11 @@ export const AnimalDetail = () => {
     <div className="details">
 
       <div className="details__header">
-      <picture>
-      {animal.image !== "" ?
-      <img src={require(`../../images/${animal.image}`).default} alt={animal.name} className="details__header--photo"/> 
-      : <p>There isn't an image.</p>}
-      </picture>
+        <picture>
+        {animal.image !== "" ?
+        <img src={require(`../../images/${animal.image}`).default} alt={animal.name} className="details__header--photo"/> 
+        : <p>There isn't an image.</p>}
+        </picture>
       </div>
 
       <div className="pet__info">
