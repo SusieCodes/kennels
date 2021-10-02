@@ -1,14 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { getCustomerById } from '../../modules/CustomerManager';
+import { getCustomerById, deleteCustomer } from '../../modules/CustomerManager';
 import './Customer.css';
 import "../../components/Kennel.css";
 import { useParams, useHistory } from "react-router-dom"
 
 export const CustomerDetail = () => {
   const [customer, setCustomer] = useState({ name: "", address: "", phoneNumber: "", animalName: "", breed: "", image: "" });
+  const [isLoading, setIsLoading] = useState(true);
 
   const {customerId} = useParams();
   const history = useHistory();
+
+  const handleDelete = () => {
+    console.log("handleDelete invoked")
+    //invokes the delete function in CustomerManager and re-directs to customer list.
+    setIsLoading(true);
+    deleteCustomer(customerId).then(() =>
+      history.push("/customers")
+    );
+  };
+
+  const goBack = () => { history.push("/customers")}; //takes user back to list
 
   useEffect(() => {
     //getCustomerById(id) from CustomerManager and hang on to the data; put it into state
@@ -24,6 +36,7 @@ export const CustomerDetail = () => {
           breed: customer.animal.breed,
           image: customer.image
         });
+        setIsLoading(false);
       });
   }, [customerId]);
 
@@ -54,6 +67,12 @@ export const CustomerDetail = () => {
         <div className="customer__info--petbreed"><strong>Breed: </strong> {customer.breed}</div>
 
       </div>
+
+      <div className="btn-flex">
+        <button className="details__btn" type="button" disabled={isLoading} onClick={goBack}>Back To List</button>
+        <button className="details__btn" type="button" disabled={isLoading} onClick={handleDelete}>Remove</button>
+      </div>
+
     </div>
   );
 }

@@ -1,14 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import { getEmployeeById } from '../../modules/EmployeeManager';
+import { getEmployeeById, deleteEmployee } from '../../modules/EmployeeManager';
 import './Employee.css';
 import "../../components/Kennel.css";
 import { useParams, useHistory } from "react-router-dom"
 
 export const EmployeeDetail = () => {
   const [employee, setEmployee] = useState({ name: "", address: "", phoneNumber: "", location: "", image: "" });
+  const [isLoading, setIsLoading] = useState(true);
+
 
   const {employeeId} = useParams();
   const history = useHistory();
+
+  const handleDelete = () => {
+    console.log("handleDelete invoked")
+    //invokes the delete function in Employee Manager and re-directs to employee list.
+    setIsLoading(true);
+    deleteEmployee(employeeId).then(() =>
+      history.push("/employees")
+    );
+  };
+
+  const goBack = () => { history.push("/employees")}; //takes user back to list
 
   useEffect(() => {
     //getAnimalById(id) from AnimalManager and hang on to the data; put it into state
@@ -22,6 +35,7 @@ export const EmployeeDetail = () => {
           location: employee.location.name,
           image: employee.image
         });
+        setIsLoading(false);
       });
   }, [employeeId]);
 
@@ -52,6 +66,11 @@ export const EmployeeDetail = () => {
 
         <div className="employee__info--location"> <strong>Location: </strong> {employee.location.name}</div>
 
+      </div>
+
+      <div className="btn-flex">
+        <button className="details__btn" type="button" disabled={isLoading} onClick={goBack}>Back To List</button>
+        <button className="details__btn" type="button" disabled={isLoading} onClick={handleDelete}>Remove</button>
       </div>
 
     </div>

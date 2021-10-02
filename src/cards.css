@@ -82,3 +82,20 @@ button {
   padding: 7px 15px;
   margin: 15px 10px 0px;
 }
+
+button:disabled,
+button:disabled:hover {
+  background-color: lightgray;
+}
+
+.btn-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.details__btn {
+  width: 200px;
+  font-size: 18px;
+  font-weight: bolder;
+}
