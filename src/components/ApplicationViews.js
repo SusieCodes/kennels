@@ -3,6 +3,7 @@ import { Route } from "react-router-dom"
 import { Home } from "../Home"
 import { AnimalList } from "./animal/AnimalList"
 import { AnimalDetail } from "./animal/AnimalDetail"
+import { AnimalForm } from "./animal/AnimalForm"
 import { EmployeeList } from "./employee/EmployeeList"
 import { EmployeeDetail } from "./employee/EmployeeDetail"
 import { LocationList } from "./location/LocationList"
@@ -23,16 +24,21 @@ export const ApplicationViews = ({isAdmin}) => {
               <AnimalList />
             </Route>
         
-            <Route path="/animals/:animalId(\d+)">
+            <Route exact path="/animals/:animalId(\d+)">
               <AnimalDetail />
             </Route>
+
+            <Route exact path="/animals/create">
+              <AnimalForm />
+            </Route>
+
 
             {/* Render the employee list when http://localhost:3000/employees */}
             <Route exact path="/employees">
               <EmployeeList />
             </Route>
 
-            <Route path="/employees/:employeeId(\d+)">
+            <Route exact path="/employees/:employeeId(\d+)">
               <EmployeeDetail />
             </Route>
 
@@ -41,7 +47,7 @@ export const ApplicationViews = ({isAdmin}) => {
               <LocationList />
             </Route>
 
-            <Route path="/locations/:locationId(\d+)">
+            <Route exact path="/locations/:locationId(\d+)">
               <LocationDetail />
             </Route>
 
@@ -50,7 +56,7 @@ export const ApplicationViews = ({isAdmin}) => {
               <CustomerList />
             </Route>
 
-            <Route path="/customers/:customerId(\d+)">
+            <Route exact path="/customers/:customerId(\d+)">
               <CustomerDetail />
             </Route>
         </>

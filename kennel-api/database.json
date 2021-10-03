@@ -1,11 +1,61 @@
 {
   "animals": [
-    { "id": 1, "name": "Ziggy", "breed": "Poodle", "locationId": 1, "customerId": 1, "image": "ziggy.png" },
-    { "id": 2, "name": "Gertrude", "breed": "German Shepherd", "locationId": 2, "customerId": 2, "image": "gspuppy.jpeg" },
-    { "id": 3, "name": "Valentina", "breed": "King Charles", "locationId": 3, "customerId": 3, "image": "puppy.png" },
-    { "id": 4, "name": "SweetPea", "breed": "Labrador", "locationId": 4, "customerId": 4, "image": "lab.png" },
-    { "id": 5, "name": "Misty", "breed": "Maltese", "locationId": 5, "customerId": 5, "image": "maltese.png" },
-    { "id": 6, "name": "Devora", "breed": "Dalmatian", "locationId": 6, "customerId": 6, "image": "dalmatian.png" }
+    {
+      "id": 1,
+      "name": "Ziggy",
+      "breed": "Poodle",
+      "locationId": 1,
+      "customerId": 1,
+      "image": "ziggy.png"
+    },
+    {
+      "id": 2,
+      "name": "Gertrude",
+      "breed": "German Shepherd",
+      "locationId": 2,
+      "customerId": 2,
+      "image": "gspuppy.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Valentina",
+      "breed": "King Charles",
+      "locationId": 3,
+      "customerId": 3,
+      "image": "puppy.png"
+    },
+    {
+      "id": 4,
+      "name": "SweetPea",
+      "breed": "Labrador",
+      "locationId": 4,
+      "customerId": 4,
+      "image": "lab.png"
+    },
+    {
+      "id": 5,
+      "name": "Misty",
+      "breed": "Maltese",
+      "locationId": 5,
+      "customerId": 5,
+      "image": "maltese.png"
+    },
+    {
+      "id": 6,
+      "name": "Devora",
+      "breed": "Dalmatian",
+      "locationId": 6,
+      "customerId": 6,
+      "image": "dalmatian.png"
+    },
+    {
+      "name": "New Animal",
+      "breed": "pug",
+      "locationId": "4",
+      "customerId": "1",
+      "image": "",
+      "id": 7
+    }
   ],
   "customers": [
     {
@@ -109,46 +159,46 @@
   ],
   "locations": [
     {
-        "id": 1,
-        "name": "Franklin South",
-        "address": "8422 Johnson Pike",
-        "phoneNumber": "615-867-5309",
-        "image": "location1.png"
+      "id": 1,
+      "name": "Franklin South",
+      "address": "8422 Johnson Pike",
+      "phoneNumber": "615-867-5309",
+      "image": "location1.png"
     },
     {
-        "id": 2,
-        "name": "Nashville South",
-        "address": "209 Emory Drive",
-        "phoneNumber": "615-867-5309",
-        "image": "location2.png"
+      "id": 2,
+      "name": "Nashville South",
+      "address": "209 Emory Drive",
+      "phoneNumber": "615-867-5309",
+      "image": "location2.png"
     },
     {
-        "id": 3,
-        "name": "Franklin North",
-        "address": "100 Northview Road",
-        "phoneNumber": "615-867-5309",
-        "image": "location3.png"
+      "id": 3,
+      "name": "Franklin North",
+      "address": "100 Northview Road",
+      "phoneNumber": "615-867-5309",
+      "image": "location3.png"
     },
     {
-        "id": 4,
-        "name": "Nashville North",
-        "address": "159 Balmoral Avenue",
-        "phoneNumber": "615-867-5309",
-        "image": "location1.png"
+      "id": 4,
+      "name": "Nashville North",
+      "address": "159 Balmoral Avenue",
+      "phoneNumber": "615-867-5309",
+      "image": "location1.png"
     },
     {
-        "id": 5,
-        "name": "Fairview North",
-        "address": "778 SilverSprings St",
-        "phoneNumber": "615-867-5309",
-        "image": "location2.png"
+      "id": 5,
+      "name": "Fairview North",
+      "address": "778 SilverSprings St",
+      "phoneNumber": "615-867-5309",
+      "image": "location2.png"
     },
     {
-        "id": 6,
-        "name": "Fairview South",
-        "address": "896 Bentley Lane",
-        "phoneNumber": "615-867-5309",
-        "image": "location3.png"
+      "id": 6,
+      "name": "Fairview South",
+      "address": "896 Bentley Lane",
+      "phoneNumber": "615-867-5309",
+      "image": "location3.png"
     }
   ]
 }

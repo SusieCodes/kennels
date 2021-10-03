@@ -8,7 +8,11 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => (
       <div className="card__content">
         
         <picture>
-          <img className="card__content--photo" src={require(`../../images/${animal.image}`).default} alt="Customer's Dog" />
+          
+          {animal.image !== "" ?
+          <img className="card__content--photo" src={require(`../../images/${animal.image}`).default} alt={animal.name} /> 
+          : <p>There isn't an image.</p>}
+
         </picture>
 
         <div className="pet__info">
@@ -31,8 +35,6 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => (
 
         </div>
 
-
-        
       </div>
     </section>
 )
