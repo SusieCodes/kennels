@@ -42,6 +42,11 @@ h6 {
   text-align: center;
 }
 
+.section__content {
+  margin: 20px auto;
+  text-align: center;
+}
+
 p {
   margin-bottom: 22px;
   color: #d6fcff;
