@@ -99,3 +99,8 @@ button:disabled:hover {
   font-size: 18px;
   font-weight: bolder;
 }
+
+.no-image {
+  padding: 20px;
+  margin: auto auto;
+}
