@@ -11,7 +11,7 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => (
           
           {animal.image !== "" ?
           <img className="card__content--photo" src={require(`../../images/${animal.image}`).default} alt={animal.name} /> 
-          : <p className="no-image">There isn't an image.</p>}
+          : <p className="no-image">Please add an image.</p>}
 
         </picture>
 
