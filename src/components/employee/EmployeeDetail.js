@@ -28,6 +28,7 @@ export const EmployeeDetail = () => {
     console.log("useEffect", employeeId)
     getEmployeeById(employeeId)
       .then(employee => {
+        console.log("employee obj is: ", employee)
         setEmployee({
           name: employee.name,
           address: employee.address,
@@ -64,7 +65,7 @@ export const EmployeeDetail = () => {
         <div className="employee__info--phone"><strong>Cell Phone: </strong> {employee.phoneNumber}
         </div>
 
-        <div className="employee__info--location"> <strong>Location: </strong> {employee.location.name}</div>
+        <div className="employee__info--location"> <strong>Location: </strong> {employee.location}</div>
 
       </div>
 

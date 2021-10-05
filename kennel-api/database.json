@@ -49,12 +49,76 @@
       "image": "dalmatian.png"
     },
     {
+      "id": 7,
+      "name": "Ziggy",
+      "breed": "Poodle",
+      "locationId": 1,
+      "customerId": 1,
+      "image": "ziggy.png"
+    },
+    {
+      "id": 8,
+      "name": "Gertrude",
+      "breed": "German Shepherd",
+      "locationId": 2,
+      "customerId": 2,
+      "image": "gspuppy.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Valentina",
+      "breed": "King Charles",
+      "locationId": 3,
+      "customerId": 3,
+      "image": "puppy.png"
+    },
+    {
+      "id": 10,
+      "name": "SweetPea",
+      "breed": "Labrador",
+      "locationId": 4,
+      "customerId": 4,
+      "image": "lab.png"
+    },
+    {
+      "id": 11,
+      "name": "Misty",
+      "breed": "Maltese",
+      "locationId": 5,
+      "customerId": 5,
+      "image": "maltese.png"
+    },
+    {
+      "id": 12,
+      "name": "Devora",
+      "breed": "Dalmatian",
+      "locationId": 6,
+      "customerId": 6,
+      "image": "dalmatian.png"
+    },
+    {
       "name": "New Animal",
       "breed": "pug",
-      "locationId": "4",
-      "customerId": "1",
+      "locationId": 4,
+      "customerId": 1,
       "image": "",
-      "id": 7
+      "id": 13
+    },
+    {
+      "name": "Fluffy",
+      "breed": "MinPin",
+      "locationId": 1,
+      "customerId": 6,
+      "image": "",
+      "id": 14
+    },
+    {
+      "name": "practice pet",
+      "breed": "pug",
+      "locationId": 2,
+      "customerId": 2,
+      "image": "",
+      "id": 15
     }
   ],
   "customers": [
@@ -64,6 +128,7 @@
       "address": "4002 Pistachio Place",
       "phoneNumber": "615-555-1212",
       "animalId": 1,
+      "email": "name@myob.com",
       "image": "customer1.png"
     },
     {
@@ -72,6 +137,7 @@
       "address": "9447 Walnut Way",
       "phoneNumber": "615-555-1212",
       "animalId": 2,
+      "email": "name2@myob.com",
       "image": "customer2.png"
     },
     {
@@ -80,6 +146,7 @@
       "address": "346 Brazilnut Blvd",
       "phoneNumber": "615-555-1212",
       "animalId": 3,
+      "email": "name3@myob.com",
       "image": "customer3.png"
     },
     {
@@ -88,6 +155,7 @@
       "address": "1196 Cashew Ct",
       "phoneNumber": "615-555-1212",
       "animalId": 4,
+      "email": "name4@myob.com",
       "image": "customer4.png"
     },
     {
@@ -96,6 +164,7 @@
       "address": "3001 Almond Ave",
       "phoneNumber": "615-555-1212",
       "animalId": 5,
+      "email": "name5@myob.com",
       "image": "customer5.png"
     },
     {
@@ -104,7 +173,13 @@
       "address": "200 Peanut Pike",
       "phoneNumber": "615-555-1212",
       "animalId": 6,
+      "email": "name6@myob.com",
       "image": "customer6.png"
+    },
+    {
+      "email": "me@me.com",
+      "name": "New User",
+      "id": 7
     }
   ],
   "employees": [
@@ -114,6 +189,7 @@
       "address": "123 Strawberry Lane",
       "phoneNumber": "615-555-1212",
       "locationId": 1,
+      "email": "name7@myob.com",
       "image": "employee1.png"
     },
     {
@@ -122,6 +198,7 @@
       "address": "456 Grapefruit Place",
       "phoneNumber": "615-555-1212",
       "locationId": 2,
+      "email": "name8@myob.com",
       "image": "employee2.png"
     },
     {
@@ -130,6 +207,7 @@
       "address": "321 Blueberry Street",
       "phoneNumber": "615-555-1212",
       "locationId": 3,
+      "email": "name9@myob.com",
       "image": "employee3.png"
     },
     {
@@ -138,6 +216,7 @@
       "address": "741 Raspberry Circle",
       "phoneNumber": "615-555-1212",
       "locationId": 4,
+      "email": "name10@myob.com",
       "image": "employee4.png"
     },
     {
@@ -146,6 +225,7 @@
       "address": "789 Mango Road",
       "phoneNumber": "615-555-1212",
       "locationId": 5,
+      "email": "name11@myob.com",
       "image": "employee5.png"
     },
     {
@@ -154,6 +234,7 @@
       "address": "369 Kiwi Avenue",
       "phoneNumber": "615-555-1212",
       "locationId": 6,
+      "email": "name12@myob.com",
       "image": "employee6.png"
     }
   ],
@@ -199,6 +280,83 @@
       "address": "896 Bentley Lane",
       "phoneNumber": "615-867-5309",
       "image": "location3.png"
+    }
+  ],
+  "customerAnimals": [
+    {
+      "id": 1,
+      "animalId": 1,
+      "customerId": 1
+    },
+    {
+      "id": 2,
+      "animalId": 2,
+      "customerId": 2
+    },
+    {
+      "id": 3,
+      "animalId": 3,
+      "customerId": 3
+    },
+    {
+      "id": 4,
+      "animalId": 4,
+      "customerId": 4
+    },
+    {
+      "id": 5,
+      "animalId": 5,
+      "customerId": 5
+    },
+    {
+      "id": 6,
+      "animalId": 6,
+      "customerId": 6
+    },
+    {
+      "id": 7,
+      "animalId": 7,
+      "customerId": 1
+    },
+    {
+      "id": 8,
+      "animalId": 8,
+      "customerId": 2
+    },
+    {
+      "id": 9,
+      "animalId": 9,
+      "customerId": 3
+    },
+    {
+      "id": 10,
+      "animalId": 10,
+      "customerId": 4
+    },
+    {
+      "id": 11,
+      "animalId": 11,
+      "customerId": 5
+    },
+    {
+      "id": 12,
+      "animalId": 12,
+      "customerId": 6
+    },
+    {
+      "id": 13,
+      "animalId": 13,
+      "customerId": 1
+    },
+    {
+      "id": 14,
+      "animalId": 14,
+      "customerId": 6
+    },
+    {
+      "id": 15,
+      "animalId": 15,
+      "customerId": 2
     }
   ]
 }

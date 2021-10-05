@@ -6,11 +6,6 @@ import { getAllLocations } from "../../modules/LocationManager";
 import { getAllCustomers } from "../../modules/CustomerManager";
 import './AnimalForm.css'
 
-const ResetForm = () => {
-  AnimalForm();
-  console.log("resetForm invoked")
-}
-
 export const AnimalForm = () => {
 	// State contains both animal data as well as an isLoading flag
 	// Defining initial state of the form inputs with useState()
@@ -33,12 +28,23 @@ export const AnimalForm = () => {
 	//when a field changes, it updates state. The return will re-render and display based on the values in state
 	//Controlled component
 
+  const ResetForm = () => {
+    setAnimal({
+      name: "",
+      breed: "",
+      locationId: 0,
+      customerId: 0,
+      image: ""
+    });
+    console.log("resetForm invoked")
+  }
+
 	const handleControlledInputChange = (event) => {
 		/* Because we are changing a state object or array,
 		we are creating a copy, making changes, and then setting state */
 		const newAnimal = { ...animal }
 		let selectedVal = event.target.value
-		/* forms provide values as strings and we want to save the ids as numbers
+		/* forms provide values as strings and we want to save the ids as numbers */
 		if (event.target.id.includes("Id")) {
 			selectedVal = parseInt(selectedVal)
 		}

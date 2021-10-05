@@ -1,0 +1,80 @@
+.h1, h1 {
+    font-size: 36px;
+}
+
+fieldset {
+    min-width: 0px;
+    padding: 20px 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.form--login {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.form--login > fieldset > input[type="email"],
+.form--login > fieldset > input[type="password"] {
+    width: 350px;
+}
+
+.label--login {
+    width: 100px;
+    display: inline-block;
+}
+
+.form-control {
+    display: block;
+    width: 94%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 10px 5px;
+    margin: 5px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.container--login {
+    text-align: center;
+}
+
+.form--login {
+    background-position-x: right;
+    background-image: url(logo.png);
+    z-index: 1;
+    min-height: 25rem;
+    min-width: 45rem;
+    background-color: hsla(0,0%,100%,0.40);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+}
+
+.button--close {
+    position: relative;
+    bottom: -2rem;
+}
+
+.dialog {
+    min-width: 15rem;
+    min-height: 5rem;
+}
+
+.not__member {
+    padding: 20px;
+}
+
+.login__link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500px;
+    color: #8D7068;
+}

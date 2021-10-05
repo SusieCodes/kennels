@@ -7,9 +7,9 @@ export const CustomerCard = ({ customer, handleDeleteCustomer }) => (
     <section className="page__card">
       <div className="card__content">
 
-        <picture>
+        {/* <picture>
           <img className="card__content--photo" src={require(`../../images/${customer.image}`).default} alt={customer.name} />
-        </picture>
+        </picture> */}
 
         <div className="customer__info">
 

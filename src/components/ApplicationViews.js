@@ -1,6 +1,9 @@
-import React from "react"
-import { Route } from "react-router-dom"
+import React, { useState } from "react"
+import { Route, Redirect } from "react-router-dom"
 import { Home } from "../Home"
+import { Register } from "../components/auth/Register"
+import { Login } from "../components/auth/Login"
+import { AnimalEditForm } from "../components/animal/AnimalEditForm"
 import { AnimalList } from "./animal/AnimalList"
 import { AnimalDetail } from "./animal/AnimalDetail"
 import { AnimalForm } from "./animal/AnimalForm"
@@ -12,6 +15,14 @@ import { CustomerList } from "./customer/CustomerList"
 import { CustomerDetail } from "./customer/CustomerDetail"
 
 export const ApplicationViews = ({isAdmin}) => {
+  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+
+const setAuthUser = (user) => {
+	sessionStorage.setItem("kennel_customer", JSON.stringify(user))
+	setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+}
+
+
     return (
         <>
             {/* Render the list when http://localhost:3000/ */}
@@ -21,9 +32,17 @@ export const ApplicationViews = ({isAdmin}) => {
 
             {/* Render the animal list when http://localhost:3000/animals */}
             <Route exact path="/animals">
-              <AnimalList />
+            {isAuthenticated ? <AnimalList /> : <Redirect to="/login" />}
             </Route>
         
+            <Route path="/login">
+	          <Login setAuthUser={setAuthUser}/>
+            </Route>
+
+            <Route path="/register">
+              <Register setAuthUser={setAuthUser}/>
+            </Route>
+
             <Route exact path="/animals/:animalId(\d+)">
               <AnimalDetail />
             </Route>
@@ -32,10 +51,15 @@ export const ApplicationViews = ({isAdmin}) => {
               <AnimalForm />
             </Route>
 
+            <Route path="/animals/:animalId(\d+)/edit">
+              {isAuthenticated ? <AnimalEditForm />
+              : <Redirect to="/login" />}
+            </Route>
+
 
             {/* Render the employee list when http://localhost:3000/employees */}
             <Route exact path="/employees">
-              <EmployeeList />
+            {isAuthenticated ? <EmployeeList /> : <Redirect to="/login" />}
             </Route>
 
             <Route exact path="/employees/:employeeId(\d+)">
@@ -53,7 +77,7 @@ export const ApplicationViews = ({isAdmin}) => {
 
             {/* Render the customer list when http://localhost:3000/customers */}
             <Route exact path="/customers">
-              <CustomerList />
+            {isAuthenticated ? <CustomerList /> : <Redirect to="/login" />}
             </Route>
 
             <Route exact path="/customers/:customerId(\d+)">
@@ -62,3 +86,4 @@ export const ApplicationViews = ({isAdmin}) => {
         </>
     )
 }
+
