@@ -38,17 +38,19 @@ export const Login = ({setAuthUser}) => {
 
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Cohort 51 Dog Grooming</h1>
-                    <h2>Please sign in</h2>
-                    <fieldset>
+                    <h1>Welcome To C51 Dog Grooming</h1>
+                    <h2>Please Sign-In</h2>
+                    <fieldset className="center">
+                        <div className="input--login">
                         <label htmlFor="inputEmail"> Email address </label>
                         <input ref={email} type="email"
                             id="email"
                             className="form-control"
                             placeholder="Email address"
                             required autoFocus />
+                            </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset className="sign-in">
                         <button type="submit">
                             Sign in
                         </button>
@@ -56,7 +58,7 @@ export const Login = ({setAuthUser}) => {
                 </form>
             </section>
             <section className="not__member">
-                <Link className="login__link" to="/register">Not a member yet?</Link>
+                <Link className="login__link" to="/register">Not a member yet? Sign Up Here</Link>
             </section>
         </main>
     )

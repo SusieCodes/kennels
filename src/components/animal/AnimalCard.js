@@ -1,11 +1,11 @@
 import React from "react"
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Animal.css"
 import "./../../cards.css"
 import { firstLetterCase } from '../../modules/helpers'
 
 export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
-  const history = useHistory(); 
+
     return (
     <>
       <section className="page__card">
@@ -34,11 +34,9 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
           <div className="remove-item">
 
           <Link to={`/animals/${animal.id}`}><button>Details</button></Link>
-          
-          <button type="button"
-          onClick={() => history.push(`/animals/${animal.id}/edit`)}>Edit</button>
+          <Link to={`/animals/${animal.id}/edit`}><button>Edit</button></Link>
 
-          <button type="button" onClick={() => handleDeleteAnimal(animal.id)}>Remove Pet</button>
+          <button type="button" onClick={() => handleDeleteAnimal(animal.id)}>Remove</button>
 
 
           </div>

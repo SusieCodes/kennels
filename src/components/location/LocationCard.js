@@ -26,7 +26,9 @@ export const LocationCard = ({ location, handleDeleteLocation }) => (
         <div className="remove-item">
         
         <Link to={`/locations/${location.id}`}><button>Details</button></Link>
-        <button type="button" onClick={() => handleDeleteLocation(location.id)}>Remove Location</button>
+        <Link to={`/locations/${location.id}/edit`}><button>Edit</button></Link>
+
+        <button type="button" onClick={() => handleDeleteLocation(location.id)}>Remove</button>
 
         </div>
 

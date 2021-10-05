@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import { CustomerCard } from './CustomerCard';
 import { getAllCustomers, deleteCustomer } from '../../modules/CustomerManager';
 
@@ -32,6 +33,10 @@ export const CustomerList = () => {
 
       <div className="section__header">
       CUSTOMERS
+      </div>
+
+      <div className="section__content">
+      <Link to={`/customers/create`}><button>Add A Customer</button></Link>
       </div> 
 
       <div className="container-cards">

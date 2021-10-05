@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import "./Customer.css"
 import "./../../cards.css"
 
-export const CustomerCard = ({ customer, handleDeleteCustomer }) => (
+export const CustomerCard = ({ customer, handleDeleteCustomer }) => {
+
+  return (
     <section className="page__card">
       <div className="card__content">
 
@@ -34,10 +36,13 @@ export const CustomerCard = ({ customer, handleDeleteCustomer }) => (
         <div className="remove-item">
 
         <Link to={`/customers/${customer.id}`}><button>Details</button></Link>
-        <button type="button" onClick={() => handleDeleteCustomer(customer.id)}>Remove Customer</button>
+        <Link to={`/customers/${customer.id}/edit`}><button>Edit</button></Link>
+
+        <button type="button" onClick={() => handleDeleteCustomer(customer.id)}>Remove</button>
 
         </div>
 
       </div>
     </section>
-)
+  )
+}

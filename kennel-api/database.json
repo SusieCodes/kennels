@@ -135,7 +135,6 @@
       "name": "Susie Stanley",
       "address": "4002 Pistachio Place",
       "phoneNumber": "615-555-1212",
-      "animalId": 1,
       "email": "name@myob.com",
       "image": "customer1.png"
     },
@@ -144,7 +143,6 @@
       "name": "Betty Boop",
       "address": "9447 Walnut Way",
       "phoneNumber": "615-555-1212",
-      "animalId": 2,
       "email": "name2@myob.com",
       "image": "customer2.png"
     },
@@ -153,7 +151,6 @@
       "name": "Melanie Matthews",
       "address": "346 Brazilnut Blvd",
       "phoneNumber": "615-555-1212",
-      "animalId": 3,
       "email": "name3@myob.com",
       "image": "customer3.png"
     },
@@ -162,7 +159,6 @@
       "name": "Penelope Piper",
       "address": "1196 Cashew Ct",
       "phoneNumber": "615-555-1212",
-      "animalId": 4,
       "email": "name4@myob.com",
       "image": "customer4.png"
     },
@@ -171,7 +167,6 @@
       "name": "Nancy Newborn",
       "address": "3001 Almond Ave",
       "phoneNumber": "615-555-1212",
-      "animalId": 5,
       "email": "name5@myob.com",
       "image": "customer5.png"
     },
@@ -180,7 +175,6 @@
       "name": "Linda Lewis",
       "address": "200 Peanut Pike",
       "phoneNumber": "615-555-1212",
-      "animalId": 6,
       "email": "name6@myob.com",
       "image": "customer6.png"
     }

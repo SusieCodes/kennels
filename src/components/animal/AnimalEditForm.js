@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { update, getAnimalById } from "../../modules/AnimalManager"
-import "./AnimalForm.css"
+import "./Animal.css"
+import "../../components/Forms.css"
 import { useParams, useHistory } from "react-router-dom"
 import { getAllLocations } from "../../modules/LocationManager"
 import { getAllCustomers } from "../../modules/CustomerManager"
@@ -12,7 +13,6 @@ export const AnimalEditForm = () => {
 
 	const [locations, setLocations] = useState([]);
 	const [customers, setCustomers] = useState([]);
-  const [selected, setSelected] = useState("");
 
   const {animalId} = useParams();
   const history = useHistory();
@@ -72,8 +72,8 @@ export const AnimalEditForm = () => {
   return (
     <>
     <div className="form-flex">
-        <form className="animalForm">
-          <div className="animalForm__title">Edit Animal</div>
+        <form>
+          <div className="form__title">Edit Animal</div>
           <fieldset>
             <div className="form-group">
 

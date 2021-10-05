@@ -4,7 +4,8 @@ import { useHistory } from "react-router-dom";
 import { addAnimal } from "../../modules/AnimalManager";
 import { getAllLocations } from "../../modules/LocationManager";
 import { getAllCustomers } from "../../modules/CustomerManager";
-import './AnimalForm.css'
+import "./Animal.css"
+import "../../components/Forms.css"
 
 export const AnimalForm = () => {
 	// State contains both animal data as well as an isLoading flag
@@ -16,8 +17,6 @@ export const AnimalForm = () => {
 		customerId: 0,
     image: ""
 	});
-
-	const [isLoading, setIsLoading] = useState(true);
 
 	// you will need the the `getAll` in the LocationsManager and CustomersManager to complete this section
 	const [locations, setLocations] = useState([]);
@@ -91,8 +90,8 @@ export const AnimalForm = () => {
 
 	return (
     <div className="form-flex">
-      <form className="animalForm">
-        <h2 className="animalForm__title">New Animal</h2>
+      <form>
+        <div className="form__title">New Animal</div>
         <fieldset>
           <div className="form-group">
             <label htmlFor="name">Pet name:</label>

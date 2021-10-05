@@ -1,5 +1,6 @@
 import React, { useRef } from "react"
 import { useHistory } from "react-router-dom"
+import { Link } from "react-router-dom";
 import "./Login.css"
 
 export const Register = ({setAuthUser}) => {
@@ -61,7 +62,7 @@ export const Register = ({setAuthUser}) => {
             </dialog>
 
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for C51 Dog Grooming</h1>
+                <h1>Please Register</h1>
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
                     <input ref={firstName} type="text" name="firstName" className="form-control" placeholder="First name" required autoFocus />
@@ -72,18 +73,19 @@ export const Register = ({setAuthUser}) => {
                 </fieldset>
                 <fieldset>
                     <label htmlFor="address"> Address </label>
-                    <input ref={address} type="text" name="address" className="form-control" placeholder="address" required />
-                </fieldset>
-                <fieldset>
-                    <label htmlFor="inputEmail"> Email address </label>
-                    <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
+                    <input ref={address} type="text" name="address" className="form-control" placeholder="Address" required />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputPhone"> Phone Number </label>
-                    <input ref={phoneNumber} type="phone" name="phone" className="form-control" placeholder="Phone Number" required />
+                    <input ref={phoneNumber} type="text" name="phoneNumber" className="form-control" placeholder="XXX-XXX-XXXX" required />
                 </fieldset>
                 <fieldset>
+                    <label htmlFor="inputEmail"> Email Address </label>
+                    <input ref={email} type="text" name="email" className="form-control" placeholder="Email Address" required />
+                </fieldset>
+                <fieldset className="sign-up">
                     <button type="submit"> Sign Up </button>
+                    <Link to="/login"><button type="button">Cancel</button></Link>
                 </fieldset>
             </form>
         </main>

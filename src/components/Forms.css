@@ -13,11 +13,13 @@ form {
   text-align: center;
 }
 
-.animalForm__title {
+.form__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #5D4943;
   padding: 30px;
   margin: 0px;
   background-color: rgb(255, 251, 247);
-  color: #505050;
 }
 
 fieldset {
