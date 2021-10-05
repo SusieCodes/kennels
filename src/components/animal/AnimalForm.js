@@ -95,20 +95,20 @@ export const AnimalForm = () => {
         <h2 className="animalForm__title">New Animal</h2>
         <fieldset>
           <div className="form-group">
-            <label htmlFor="name">Animal name:</label>
-            <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Animal name" value={animal.name} />
+            <label htmlFor="name">Pet name:</label>
+            <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control-edit" placeholder="Animal name" value={animal.name} />
           </div>
         </fieldset>
         <fieldset>
           <div className="form-group">
-            <label htmlFor="breed">Animal breed:</label>
-            <input type="text" id="breed" onChange={handleControlledInputChange} required className="form-control" placeholder="Animal breed" value={animal.breed} />
+            <label htmlFor="breed">Breed:</label>
+            <input type="text" id="breed" onChange={handleControlledInputChange} required className="form-control-edit" placeholder="Animal breed" value={animal.breed} />
           </div>
         </fieldset>
         <fieldset>
           <div className="form-group">
             <label htmlFor="location">Assign to location: </label>
-            <select value={animal.locationId} name="locationId" id="locationId" onChange={handleControlledInputChange} className="form-control" >
+            <select value={animal.locationId} name="locationId" id="locationId" onChange={handleControlledInputChange} className="form-control-edit" >
               <option value="0">Select a location</option>
               {locations.map(l => (
                 <option key={l.id} value={l.id}>
@@ -121,7 +121,7 @@ export const AnimalForm = () => {
         <fieldset>
           <div className="form-group">
             <label htmlFor="customerId">Customer: </label>
-            <select value={animal.customerId} name="customer" id="customerId" onChange={handleControlledInputChange} className="form-control" >
+            <select value={animal.customerId} name="customer" id="customerId" onChange={handleControlledInputChange} className="form-control-edit" >
               <option value="0">Select a customer</option>
               {customers.map(c => (
                 <option key={c.id} value={c.id}>

@@ -12,8 +12,8 @@
       "id": 2,
       "name": "Gertrude",
       "breed": "German Shepherd",
-      "locationId": 2,
-      "customerId": 2,
+      "locationId": "2",
+      "customerId": "2",
       "image": "gspuppy.jpeg"
     },
     {
@@ -105,20 +105,28 @@
       "id": 13
     },
     {
+      "id": 14,
       "name": "Fluffy",
       "breed": "MinPin",
       "locationId": 1,
       "customerId": 6,
-      "image": "",
-      "id": 14
+      "image": ""
     },
     {
+      "id": 15,
       "name": "practice pet",
       "breed": "pug",
       "locationId": 2,
       "customerId": 2,
+      "image": ""
+    },
+    {
+      "name": "Cutie Pie",
+      "breed": "Lhasa Apso",
+      "locationId": 1,
+      "customerId": 1,
       "image": "",
-      "id": 15
+      "id": 16
     }
   ],
   "customers": [
@@ -175,11 +183,6 @@
       "animalId": 6,
       "email": "name6@myob.com",
       "image": "customer6.png"
-    },
-    {
-      "email": "me@me.com",
-      "name": "New User",
-      "id": 7
     }
   ],
   "employees": [

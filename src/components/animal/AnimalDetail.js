@@ -65,8 +65,12 @@ export const AnimalDetail = () => {
       </div>
 
       <div className="btn-flex">
-        <button className="details__btn" type="button" disabled={isLoading} onClick={goBack}>Back To List</button>
-        <button className="details__btn" type="button" disabled={isLoading} onClick={handleDelete}>Remove</button>
+        <button type="button" disabled={isLoading} onClick={goBack}>Back To List</button>
+
+        <button type="button"
+          onClick={() => history.push(`/animals/${animalId}/edit`)}>Edit</button>
+
+        <button type="button" disabled={isLoading} onClick={handleDelete}>Remove</button>
       </div>
 
     </div>

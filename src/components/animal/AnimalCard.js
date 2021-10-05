@@ -15,7 +15,7 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
             
             {animal.image !== "" ?
             <img className="card__content--photo" src={require(`../../images/${animal.image}`).default} alt={animal.name} /> 
-            : <p className="no-image">Please add an image.</p>}
+            : <p className="no-image">Please add an image</p>}
 
           </picture>
 
@@ -34,6 +34,7 @@ export const AnimalCard = ({ animal, handleDeleteAnimal }) => {
           <div className="remove-item">
 
           <Link to={`/animals/${animal.id}`}><button>Details</button></Link>
+          
           <button type="button"
           onClick={() => history.push(`/animals/${animal.id}/edit`)}>Edit</button>
 

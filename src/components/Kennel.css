@@ -4,11 +4,7 @@
 
 
 /* ---------- Typography ----------*/
-body,
-button,
-input,
-select,
-textarea {
+body {
   color: #404040;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;

@@ -7,6 +7,7 @@ export const Register = ({setAuthUser}) => {
     const lastName = useRef()
     const email = useRef()
     const phoneNumber = useRef()
+    const address = useRef()
     const conflictDialog = useRef()
     const history = useHistory()
 
@@ -32,6 +33,7 @@ export const Register = ({setAuthUser}) => {
                             email: email.current.value,
                             name: `${firstName.current.value} ${lastName.current.value}`,
                             phoneNumber: `${phoneNumber.current.value}`,
+                            address: `${address.current.value}`,
                             image: ""
                         })
                     })
@@ -67,6 +69,10 @@ export const Register = ({setAuthUser}) => {
                 <fieldset>
                     <label htmlFor="lastName"> Last Name </label>
                     <input ref={lastName} type="text" name="lastName" className="form-control" placeholder="Last name" required />
+                </fieldset>
+                <fieldset>
+                    <label htmlFor="address"> Address </label>
+                    <input ref={address} type="text" name="address" className="form-control" placeholder="address" required />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="inputEmail"> Email address </label>
