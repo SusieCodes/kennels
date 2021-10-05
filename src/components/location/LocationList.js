@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import { LocationCard } from './LocationCard';
 import { getAllLocations, deleteLocation } from '../../modules/LocationManager';
 
@@ -34,6 +35,10 @@ export const LocationList = () => {
       <div className="section__header">
       LOCATIONS
       </div> 
+
+      <div className="section__content">
+      <Link to={`/locations/create`}><button>Add A Location</button></Link>
+      </div>
 
       <div className="container-cards">
       {locations.map(location => 

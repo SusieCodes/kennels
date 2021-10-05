@@ -4,12 +4,8 @@ import { useHistory } from "react-router-dom";
 import { addAnimal } from "../../modules/AnimalManager";
 import { getAllLocations } from "../../modules/LocationManager";
 import { getAllCustomers } from "../../modules/CustomerManager";
-import './AnimalForm.css'
-
-const ResetForm = () => {
-  AnimalForm();
-  console.log("resetForm invoked")
-}
+import "./Animal.css"
+import "../../components/Forms.css"
 
 export const AnimalForm = () => {
 	// State contains both animal data as well as an isLoading flag
@@ -22,8 +18,6 @@ export const AnimalForm = () => {
     image: ""
 	});
 
-	const [isLoading, setIsLoading] = useState(true);
-
 	// you will need the the `getAll` in the LocationsManager and CustomersManager to complete this section
 	const [locations, setLocations] = useState([]);
 	const [customers, setCustomers] = useState([]);
@@ -33,12 +27,23 @@ export const AnimalForm = () => {
 	//when a field changes, it updates state. The return will re-render and display based on the values in state
 	//Controlled component
 
+  const ResetForm = () => {
+    setAnimal({
+      name: "",
+      breed: "",
+      locationId: 0,
+      customerId: 0,
+      image: ""
+    });
+    console.log("resetForm invoked")
+  }
+
 	const handleControlledInputChange = (event) => {
 		/* Because we are changing a state object or array,
 		we are creating a copy, making changes, and then setting state */
 		const newAnimal = { ...animal }
 		let selectedVal = event.target.value
-		/* forms provide values as strings and we want to save the ids as numbers
+		/* forms provide values as strings and we want to save the ids as numbers */
 		if (event.target.id.includes("Id")) {
 			selectedVal = parseInt(selectedVal)
 		}
@@ -85,24 +90,24 @@ export const AnimalForm = () => {
 
 	return (
     <div className="form-flex">
-      <form className="animalForm">
-        <h2 className="animalForm__title">New Animal</h2>
+      <form>
+        <div className="form__title">New Animal</div>
         <fieldset>
           <div className="form-group">
-            <label htmlFor="name">Animal name:</label>
-            <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Animal name" value={animal.name} />
+            <label htmlFor="name">Pet name:</label>
+            <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control-edit" placeholder="Animal name" value={animal.name} />
           </div>
         </fieldset>
         <fieldset>
           <div className="form-group">
-            <label htmlFor="breed">Animal breed:</label>
-            <input type="text" id="breed" onChange={handleControlledInputChange} required className="form-control" placeholder="Animal breed" value={animal.breed} />
+            <label htmlFor="breed">Breed:</label>
+            <input type="text" id="breed" onChange={handleControlledInputChange} required className="form-control-edit" placeholder="Animal breed" value={animal.breed} />
           </div>
         </fieldset>
         <fieldset>
           <div className="form-group">
             <label htmlFor="location">Assign to location: </label>
-            <select value={animal.locationId} name="locationId" id="locationId" onChange={handleControlledInputChange} className="form-control" >
+            <select value={animal.locationId} name="locationId" id="locationId" onChange={handleControlledInputChange} className="form-control-edit" >
               <option value="0">Select a location</option>
               {locations.map(l => (
                 <option key={l.id} value={l.id}>
@@ -115,7 +120,7 @@ export const AnimalForm = () => {
         <fieldset>
           <div className="form-group">
             <label htmlFor="customerId">Customer: </label>
-            <select value={animal.customerId} name="customer" id="customerId" onChange={handleControlledInputChange} className="form-control" >
+            <select value={animal.customerId} name="customer" id="customerId" onChange={handleControlledInputChange} className="form-control-edit" >
               <option value="0">Select a customer</option>
               {customers.map(c => (
                 <option key={c.id} value={c.id}>

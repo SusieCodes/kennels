@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { AnimalCard } from './AnimalCard';
 import { getAllAnimals, deleteAnimal } from '../../modules/AnimalManager';
 
@@ -8,8 +7,6 @@ import { getAllAnimals, deleteAnimal } from '../../modules/AnimalManager';
 export const AnimalList = () => {
   // The initial state is an empty array
   const [animals, setAnimals] = useState([]);
-
-  const history = useHistory();
 
   const getAnimals = () => {
     // After the data comes back from the API, we
@@ -40,11 +37,7 @@ export const AnimalList = () => {
         </div> 
 
         <div className="section__content">
-          <button type="button"
-              className="details__btn"
-              onClick={() => {history.push("/animals/create")}}>
-              Add A Pet
-          </button>
+          <Link to={`/animals/create`}><button>Add A Pet</button></Link>
         </div>
 
 

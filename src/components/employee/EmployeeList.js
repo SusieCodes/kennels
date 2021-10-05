@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import { EmployeeCard } from './EmployeeCard';
 import { getAllEmployees, deleteEmployee } from '../../modules/EmployeeManager';
 
@@ -34,6 +35,10 @@ export const EmployeeList = () => {
       <div className="section__header">
       EMPLOYEES
       </div> 
+
+      <div className="section__content">
+      <Link to={`/employees/create`}><button>Add An Employee</button></Link>
+      </div>
 
       <div className="container-cards">
         {employees.map(employee => 

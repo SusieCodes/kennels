@@ -20,3 +20,11 @@
   font-weight: 400;
   color: white; 
 }
+
+.all__pets {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin: 15px 15px 5px 0px; 
+}
