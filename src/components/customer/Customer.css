@@ -8,23 +8,88 @@
   background-color: #C9BCAB;
 }
 
+.details__customer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #C9BCAB;
+  padding: 30px;
+}
+
+.customer__flex {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+}
+
+.customer__header {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* margin-top: 30px; */
+}
+
+.picture {
+  margin: 0px;
+}
+
+.details__customer--info {
+  padding: 10px;
+}
+
+.customer__header--photo {
+  align-self: center;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.customer__pet--info {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  text-align: left;
+  background-color: #C9BCAB;
+}
+
 .customer__info--name {
   font-size: 24px;
   font-weight: 700;
-  color: white; 
+  color: #5D4943; 
   margin-bottom: 10px;
 }
 
 .customer__info--address, .customer__info--phone, .customer__info--petname, .customer__info--petbreed {
   font-size: 18px;
   font-weight: 400;
-  color: white; 
+  color: #5D4943; 
 }
 
-.all__pets {
+/* .all__pets {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
   color: white;
   margin: 15px 15px 5px 0px; 
+} */
+
+.customer__pet--cards {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 30px; */
+  padding:  15px 25px;
+  color: #5D4943;
+  border-radius: 10px;
 }
+
+.pets {
+  font-size: 22px;
+  font-weight: 700;
+  color: #5D4943; 
+  margin-bottom: 5px; 
+}
+
+.customer__pet {
+  margin: 5px 0px;}

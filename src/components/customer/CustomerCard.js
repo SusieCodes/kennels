@@ -25,12 +25,6 @@ export const CustomerCard = ({ customer, handleDeleteCustomer }) => {
 
           <div className="customer__info--phone"><strong>Phone Number: </strong> {customer.phoneNumber}</div>
 
-          <div className="all__pets"><strong>PETS</strong></div>
-          
-          {/* <div className="customer__info--petname"><strong>Pet Name: </strong>{customer.animal.name}</div>
-
-          <div className="customer__info--petbreed"><strong>Breed: </strong> {customer.animal.breed}</div> */}
-
         </div>
 
         <div className="remove-item">
