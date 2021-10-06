@@ -18,16 +18,16 @@
     },
     {
       "id": 3,
-      "name": "Valentina",
-      "breed": "King Charles",
+      "name": "Kacey",
+      "breed": "KC Cavalier",
       "locationId": 3,
       "customerId": 3,
       "image": "puppy.png"
     },
     {
       "id": 4,
-      "name": "SweetPea",
-      "breed": "Labrador",
+      "name": "Lucy",
+      "breed": "Lab",
       "locationId": 4,
       "customerId": 4,
       "image": "lab.png"
@@ -50,82 +50,82 @@
     },
     {
       "id": 7,
-      "name": "Ziggy",
-      "breed": "Poodle",
+      "name": "Chewy",
+      "breed": "Chihuahua",
       "locationId": 1,
       "customerId": 1,
       "image": "ziggy.png"
     },
     {
       "id": 8,
-      "name": "Gertrude",
-      "breed": "German Shepherd",
+      "name": "Diana",
+      "breed": "Daschund",
       "locationId": 2,
       "customerId": 2,
-      "image": "gspuppy.jpeg"
+      "image": "daschund.png"
     },
     {
       "id": 9,
-      "name": "Valentina",
-      "breed": "King Charles",
+      "name": "Ruby",
+      "breed": "Rottweiler",
       "locationId": 3,
       "customerId": 3,
-      "image": "puppy.png"
+      "image": "rottweiler.png"
     },
     {
       "id": 10,
-      "name": "SweetPea",
-      "breed": "Labrador",
+      "name": "YoYo",
+      "breed": "Yorkie",
       "locationId": 4,
       "customerId": 4,
-      "image": "lab.png"
+      "image": "yorkie.png"
     },
     {
       "id": 11,
-      "name": "Misty",
-      "breed": "Maltese",
+      "name": "Louise",
+      "breed": "Labrador",
       "locationId": 5,
       "customerId": 5,
-      "image": "maltese.png"
+      "image": "labpuppy.png"
     },
     {
       "id": 12,
-      "name": "Devora",
-      "breed": "Dalmatian",
+      "name": "Priscilla",
+      "breed": "Pomeranian",
       "locationId": 6,
       "customerId": 6,
-      "image": "dalmatian.png"
+      "image": "pomeranian.png"
     },
     {
-      "name": "New Animal",
-      "breed": "pug",
+      "name": "Baxter",
+      "breed": "Bordeaux",
       "locationId": 4,
       "customerId": 1,
-      "image": "",
+      "image": "bordeaux.png",
       "id": 13
     },
     {
       "id": 14,
       "name": "Fluffy",
-      "breed": "MinPin",
+      "breed": "Frenchie",
       "locationId": 1,
       "customerId": 6,
-      "image": ""
+      "image": "frenchie.png"
     },
     {
       "id": 15,
-      "name": "practice pet",
-      "breed": "pug",
+      "name": "Houston",
+      "breed": "Hound",
       "locationId": 2,
       "customerId": 2,
-      "image": ""
+      "image": "hound.png"
     },
     {
-      "name": "Cutie Pie",
-      "breed": "Lhasa Apso",
+      "name": "Helen",
+      "breed": "Husky",
       "locationId": 1,
       "customerId": 1,
-      "image": "",
+      "image": "husky.png",
       "id": 16
     }
   ],
