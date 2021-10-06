@@ -67,7 +67,7 @@ export const CustomerDetail = () => {
 
                 </div>
 
-                <div className="btn-flex">
+                <div className="customer__details--btn-flex">
                   <button className="details__btn" type="button" disabled={isLoading} onClick={goBack}>Back To List</button>
                   <button className="details__btn" type="button" disabled={isLoading} onClick={handleDelete}>Remove</button>
                 </div>
