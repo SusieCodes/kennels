@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { PropsAndState } from './components/PropsAndState'
 import { QuoteList } from './components/quote/QuoteList'
+import { getRandomId } from './modules/AnimalManager'
+import { AnimalSpotlight } from "../src/components/animal/AnimalSpotlight"
 
 const date = new Date();
 let todaysDate = date.toDateString();
@@ -9,6 +11,16 @@ console.log(todaysDate);
 console.log(theTime);
 
 export const Home = ({isAdmin}) => {
+    const [spotlightId, setSpotlightId] = useState(0);
+
+    const refreshSpotlightAnimal = () => {
+        getRandomId().then(setSpotlightId);
+    };
+
+    useEffect(() => {
+        refreshSpotlightAnimal();
+    }, []);
+
     return (
     <>
     <div className="home__flex">
@@ -23,9 +35,9 @@ export const Home = ({isAdmin}) => {
                     <div className="welcome">
                         <PropsAndState yourName={"Susie"} day={todaysDate} time={theTime}/>
 
-                        {isAdmin ?
+                        {/* {isAdmin ?
                         <div>You are an Admin</div> 
-                        : <div>You are an not an Admin</div>}
+                        : <div>You are an not an Admin</div>} */}
 
                     </div>
 
@@ -37,12 +49,24 @@ export const Home = ({isAdmin}) => {
             </div>
 
             <div className="col2 colspacer">
-                <img className="col2__photo" src={require(`./images/homepagepic.png`).default} alt="cute dog with sign" />
+                <div className="spotlight">
+
+                    <div className="spotlight-headline">Animal Spotlight</div>
+
+                    {
+                    spotlightId && <AnimalSpotlight animalId={spotlightId} />
+                    }
+
+                    <div className="spotlight-btn">
+                        <button onClick={refreshSpotlightAnimal}>Reload &#x27f3;</button>
+                    </div>
+
+                </div>
             </div>
 
         </div>
     </div>
-    </>
+</>
     
     )
 }

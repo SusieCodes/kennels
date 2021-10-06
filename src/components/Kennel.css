@@ -93,8 +93,59 @@ address {
 
 .col2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+}
+
+.col2 h1 {
+  text-align: center;
+}
+
+.spotlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+}
+
+.spotlight__photo {
+  border-radius: 10px;
+}
+
+.spotlight-headline {
+  font-family: "Source Serif Pro", serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.spotlight-btn {
+  margin: 10px;
+  text-align: center;
+}
+
+.pet__info--spotlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 30px;
+  background-color: #C9BCAB;
+  border: 2px solid #b3a898;
+  border-radius: 10px;
+}
+
+.spotlight--name {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+}
+
+.spotlight--details {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 }
 
 .col2__photo {
@@ -146,5 +197,5 @@ address {
 .details__header--photo {
   align-self: center;
   width: 400px;
-  border-radius: 10px;}
-
+  border-radius: 10px;
+}
